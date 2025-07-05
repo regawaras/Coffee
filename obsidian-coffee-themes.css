@@ -2,17 +2,18 @@
 
 :root {
   /* Darkish*/
-  --expresso: #0A0706;
-  --americano: #362C2A; 
+  --americano: #0F0A00; 
   --dark-roast: #603020;
+  --dark-beans: #181200;
+  --green-beans: #00FF00;
+  --mocccacino: #302000;
   
-  --coffee-beans: #504010;
+  --light-beans: #504010;
   
   --hazelnut: #B0A050;
   
   --cappucino: #B49F86;
   --rich-brew: #904000;
-  --caramel: #A07050;
   --red-robusta-beans: #FF0000;
 
   --mid-kaffe: #755535;
@@ -22,7 +23,7 @@
   --cafe-au-lait: #CCAA55;
   --burnt-roast: #0F0B00;
   
-  --carazelnut: #AA7500;
+  --caramel: #AA7500;
   --golden-brew: #906000;
 
   --latte: #E0E090;
@@ -34,7 +35,7 @@ body {
   --accent-h: 35;
   --accent-s: 50%;
   --accent-l: 25%;
-  --font-default: "Arial Black";
+  --font-default: "Cascadia Mono";
   --font-monospace-default: "Cascadia Mono";
   --font-size-default: 20px; 
 
@@ -43,29 +44,29 @@ body {
 }
 
 .theme-dark {
-  --background-primary: var(--burnt-roast);
-  --background-primary-alt: #000000;
-  --background-secondary: #050100;
-  --background-secondary-alt: var(--coffee-beans);
-  --background-modifier-border: #251500;
-  --background-modifier-form-field: #000000;
+  --background-primary: var(--dark-beans);
+  --background-primary-alt: var(--burnt-roast);
+  --background-secondary: var(--americano);
+  --background-secondary-alt: var(--light-beans);
+  --background-modifier-border: var(--light-beans);
+  --background-modifier-form-field: var(--americano);
   --background-modifier-form-field-highlighted: #151000;
-  --background-modifier-box-shadow: #151000;
-  --background-modifier-success: #00FF00;	
+  --background-modifier-box-shadow: var(--light-beans);
+  --background-modifier-success: #00FF00;
   --background-modifier-error: #FFFF00;	
   --background-modifier-error-hover: #FF5000;	
   --background-modifier-cover: #00000000;	
 
   /* Text */
-  --text-accent: var(--carazelnut);
+  --text-accent: var(--caramel);
   --text-accent-hover: var(--hazelnut);
-  --text-normal: #FFFFFF;	
+  --text-normal: var(--milk-foam);	
   --text-muted: var(--milk-foam);	
   --text-faint: var(--hazelnut) ;	
-  --text-error: #FF0000;	
-  --text-error-hover: #FF5000;	
+  --text-error: var(--red-robusta-beans);	
+  --text-error-hover: #FF5000;
   --text-highlight-bg: #302000;
-  --text-highlight-bg-active: #906000;
+  --text-highlight-bg-active: var(--golden-brew);
   --text-selection: var(--mid-kaffe);
 
 
@@ -75,8 +76,8 @@ body {
   --interactive-normal: var(--golden-brew);	
   --interactive-hover: var(--golden-brew);
   --interactive-accent: var(--mid-kaffe);	
-  --interactive-accent-hover: var(--expresso)
-  --interactive-success: #FF0000;
+  --interactive-accent-hover: var(--americano);
+  --interactive-success: var(--green-beans);
 
   --text-title-h1: #FF0000;
   --text-title-h2: #FF0000;
@@ -87,38 +88,38 @@ body {
   --link-external-color: #00FFFF;
   --link-external-color-hover: #005555;
 
-  --link-color: var(--carazelnut);
-  --link-color-hover: var(--milk-foam);
-  --link-unresolved-color: var(hazezelnut);
+  --link-color: var(--caramel);
+  --link-color-hover: var(--light-beans);
+  --link-unresolved-color: var(--caramel);
   --link-unresolved-filter: none;
-  --link-unresolved-opacity: 50%;
+  --link-unresolved-opacity: 70%;
   --link-decoration: none ;
   --link-decoration-hover: none;
 
   --tag-color: var(--hazelnut);
-  --tag-color-hover: var(--carazelnut);
-  --tag-background: ;  var(--expresso);
-  --tag-background-hover: var(--expresso);
-  --tag-border-color:var(--expresso) ;
-  --tag-border-color-hover: var(--expresso);
+  --tag-color-hover: var(--caramel);
+  --tag-background: ;  var(--americano);
+  --tag-background-hover: var(--americano);
+  --tag-border-color:var(--americano) ;
+  --tag-border-color-hover: var(--americano);
 
   /* Scrollbar */
-  --scrollbar-active-thumb-bg: #FFFF00;	
-  --scrollbar-bg: #FFFF00;	
-  --scrollbar-thumb-bg: #201500;
+  --scrollbar-active-thumb-bg: var(--caramel);	
+  --scrollbar-bg: var(--hazelnut);
+  --scrollbar-thumb-bg: var(--light-beans);
 
-  --table-border-color: #352500;
-  --table-header-background: #201000;
-  --table-header-background-hover: #151000;
-  --table-header-border-color: #906000;
+  --table-border-color: var(--light-beans);
+  --table-header-background: var(--mocccacino);
+  --table-header-background-hover: var(--dark-beans);
+  --table-header-border-color: var(--hazelnut);
   --table-header-font: #FFFFFF;
   --table-header-weight: bold;
-  --table-header-color: #906000;
+  --table-header-color: var(--hazelnut);
   --table-text-color: var(--text-normal);
-  --table-column-alt-background: ;
-  --table-row-background-hover: #151000 ;
+  --table-row-background: var(--dark-beans);
+  --table-row-background-hover: var(--light-beans);
   --table-row-alt-background #00FF00 ;
-  --table-selection: #302000;
+  --table-selection: var(--mocccacino);
   --table-selection-blend-mode: soft-light ;
   --table-selection-border-color: #FFCC00;
   --table-drag-handle-color: #000000;
@@ -138,7 +139,7 @@ body {
   --code-value:  #FF00FF;
   
 /* Will Shown when Focussed on Active Obsidian Window  */
-  --titlebar-background-focused: var(--coffee-beans);
+  --titlebar-background-focused: var(--light-beans);
 /* Will Shown when Focussed on Other Window   */
   --titlebar-background: var(--hazelnut);
 /* The Upper Right Tabs (Exit, Resize, ) */
@@ -151,8 +152,8 @@ body {
 
   --nav-item-color: var(--hazelnut);
   --nav-item-color-hover: #FFFFFF;
-  --nav-item-color-active: var(--carazelnut);
-  --nav-item-color-selected:var(--carazelnut);
+  --nav-item-color-active: var(--caramel);
+  --nav-item-color-selected:var(--caramel);
   --nav-item-color-highlighted: var(--red-robusta-beans);
   --nav-item-background-hover: #151000;
   --nav-item-background-active:	#151000;
@@ -162,7 +163,7 @@ body {
   --nav-collapse-icon-color-collapsed: #FFFF00;
   
   
-  --prompt-border-color: var(--carazelnut);
+  --prompt-border-color: var(--caramel);
 
   --tab-background-active: #0C0C00;
   --tab-text-color: var(--hazelnut);
@@ -201,10 +202,10 @@ body {
   --background-modifier-cover: #00000000;	
 
 /* Text */
-  --text-accent: var(--carazelnut);
+  --text-accent: var(--caramel);
   --text-accent-hover: var(--rich-brew); 
-  --text-normal: var(--expresso);	
-  --text-muted: var(--coffee-beans);    
+  --text-normal: var(--americano);	
+  --text-muted: var(--light-beans);    
   --text-faint: var(--americano);	
   --text-error: var(--red-robusta-beans);	
   --text-error-hover: #FF5000;	
@@ -212,24 +213,24 @@ body {
   --text-highlight-bg-active: var(--hazelnut);
   --text-selection: var(--mid-kaffe);
   
-  --nav-item-color: var(--expresso);
+  --nav-item-color: var(--americano);
   --nav-item-color-hover: var(--latte);
   --nav-item-color-selected: #00FF00;
   --nav-item-color-highlighted: var(--red-robusta-beans);
   --nav-item-background-hover: var(--hazelnut);
   --nav-item-background-selected: ;
 
-  --nav-item-color-active: var(--coffee-beans);
+  --nav-item-color-active: var(--light-beans);
   --nav-item-background-active:	var(--hazelnut);
 
   --nav-indetation-guide-color:	#FFFF00;
   --nav-collapse-icon-color: #906000;
   --nav-collapse-icon-color-collapsed: #FF0000;
 
-  --link-color:var(--carazelnut);
-  --link-color-hover: var(--hazelnut);
-  --link-unresolved-color: var(--expresso);
-  --link-unresolved-color-hover: var(--carazelnut);
+  --link-color:var(--caramel);
+  --link-color-hover: var(--caramel);
+  --link-unresolved-color: var(--caramel);
+  --link-unresolved-color-hover: var(--caramel);
   --link-external-color: #005555;
   --link-external-color-hover: #00FFFF;
 
@@ -242,12 +243,12 @@ body {
   --interactive-accent-hover: var(--milk-foam)
   --interactive-success: #FF0000;
 
-  --tag-color: var(--carazelnut);
-  --tag-color-hover: var(--carazelnut);
-  --tag-background:;  var(--expresso);
-  --tag-background-hover: var(--expresso);
-  --tag-border-color:var(--expresso) ;
-  --tag-border-color-hover: var(--expresso);
+  --tag-color: var(--caramel);
+  --tag-color-hover: var(--caramel);
+  --tag-background:;  var(--americano);
+  --tag-background-hover: var(--americano);
+  --tag-border-color:var(--americano) ;
+  --tag-border-color-hover: var(--americano);
   
   --table-border-color: var(--background-secondary-alt);
   --table-header-background: var(--background-secondary-alt);
@@ -272,7 +273,7 @@ body {
 /*========== Main Tabs Line Highlight ============*/
 /* inspired from : Cyber Glow Obsidian Themes | source: https://github.com/ArtexJay/Obsidian-CyberGlow */
 body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-active:not(:has(.mk-note-footer, .mk-floweditor-container)) {
-    background: rgba(180, 150, 85, 0.3);
+    background: rgba(180, 150, 85, 0.5);
     border-radius:  var(--radius-s);
     border-image-slice: 1;
     border-top: 1px solid;
@@ -280,7 +281,7 @@ body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-ac
     border-bottom: 1px solid; }
 /* ### Hover Line Highlight on Main Tabs ### */
 .markdown-source-view.mod-cm6 .cm-line:hover {
-    background: rgba(180, 150, 85, 0.15);
+    background: rgba(180, 150, 85, 0.3);
     border-radius:  var(--radius-s);
     border-image-slice: 1;
     border-top: 1px solid;
@@ -291,8 +292,8 @@ body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-ac
 
 /** ### File Explorer Upper border ### **/
 .nav-header {
-    color: ; 
-    background: ;
+    color: var(--milk-foam); 
+    background: var(--dark-beans);
     border-image-slice: 1;
     border-top: 1px solid;
     border-image-source: linear-gradient(to right, transparent, #503010, transparent);
@@ -300,7 +301,7 @@ body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-ac
 
 /** ### Nav Line Highlight File Active Stying ### **/
 .nav-file-title.is-active {
-    background: var(--coffee-beans);
+    background: var(--light-beans);
     color: var(--milk-foam);
     border-radius:  var(--radius-s);
     border-image-slice: 1;
@@ -583,5 +584,3 @@ body{
   margin-block-end: 0.5em; }
 /* The Horizontal Line Customization ====================================================================================================================== */
 /* The Horizontal Line Customization ====================================================================================================================== */
-
-
