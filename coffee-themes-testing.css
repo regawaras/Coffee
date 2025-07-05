@@ -1,21 +1,22 @@
-/* Coffee Obsidian Themes by Regawa Rastrapranjala */
+/* Coffee Obsidian Themes by @regawaras */
 
 :root {
-
   /* Darkish*/
   --expresso: #0A0706;
   --americano: #362C2A; 
   --dark-roast: #603020;
   
-  --coffee-beans: #403000;
+  --coffee-beans: #504010;
   
   --hazelnut: #B0A050;
   
   --cappucino: #B49F86;
   --rich-brew: #904000;
-  --caramel: #D09050;
+  --caramel: #A07050;
   --red-robusta-beans: #FF0000;
-  
+
+  --mid-kaffe: #755535;
+  --balanced-brew:#998A6B; 
   
   --crema: #DDAA00;
   --cafe-au-lait: #CCAA55;
@@ -66,7 +67,7 @@ body {
   --text-error-hover: #FF5000;	
   --text-highlight-bg: #302000;
   --text-highlight-bg-active: #906000;
-  --text-selection: #403000;
+  --text-selection: var(--mid-kaffe);
 
 
     /* BUTTONS | on todo settings, canvas side buttons */
@@ -212,7 +213,7 @@ body {
   --text-error-hover: #FF5000;	
   --text-highlight-bg: var(--hazelnut);
   --text-highlight-bg-active: var(--hazelnut);
-  --text-selection:var(--caramel);
+  --text-selection: var(--mid-kaffe);
   
   --nav-item-color: var(--expresso);
   --nav-item-color-hover: var(--latte);
@@ -496,4 +497,3 @@ body{
   border-image: linear-gradient(to left, transparent, var(--text-accent) 45%, transparent 45%, transparent 55%, var(--text-accent) 5%, transparent) 3;
   text-align: -webkit-center;
   margin-block-end: 0.5em; }
-
