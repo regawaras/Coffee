@@ -38,6 +38,7 @@ body {
   
   --font-default: "Arial Black";
   --font-monospace-default: "Cascadia Mono";
+  --font-text-theme: "Helvatica";
   --font-size-default: 20px; 
   
   --link-external-color: #005555;
@@ -47,14 +48,14 @@ body {
 }
 
 .theme-dark {
-  
 /* Will Shown when Focussed on Active Obsidian Window  */
   --titlebar-background-focused: var(--americano);
 /* Will Shown when Focussed on Other Window   */
-  --titlebar-background: var(--dark-beans);
+  --titlebar-background: var(--milk-foam);
 /* The Upper Right Tabs (Exit, Resize, ) */
   --titlebar-text-color-focused:var(--milk-foam);
-  --titlebar-text-color: var(--milk-foam);
+  --titlebar-text-color: var(--crema);
+  --titlebar-icon-color: var(--milk-foam);
   
   --background-primary: var(--dark-beans);
   --background-primary-alt: var(--burnt-roast);
@@ -81,7 +82,6 @@ body {
   --text-highlight-bg-active: var(--golden-brew);
   --text-selection: var(--cappucino);
 
-
     /* BUTTONS | on todo settings, canvas side buttons */
   --text-on-accent: var(--milk-foam);
   --text-on-accent-hover: var(--latte);
@@ -95,7 +95,7 @@ body {
   --link-color-hover: var(--crema);
   --link-unresolved-color: var(--hazelnut);
   --link-unresolved-filter: none;
-  --link-unresolved-opacity: 70%;
+  --link-unresolved-opacity:50%;
   --link-decoration: none ;
   --link-decoration-hover: none;
 
@@ -185,12 +185,12 @@ body {
 /* Will Shown when Focussed on Active Obsidian Window  */
   --titlebar-background-focused: var(--luwak-white);
 /* Will Shown when Focussed on Other Window   */
-  --titlebar-background: var(--dark-beans);
-/* The Upper Right Tabs (Exit, Resize, ) */
-  --titlebar-text-color-focused:var(--milk-foam);
-  --titlebar-text-color: var(--milk-foam);  
+  --titlebar-background: var(--latte);
+/* Obsidian Window Frame  The Upper Right Tabs (Exit, Resize, ) */
+  --titlebar-text-color-focused:var(--americano);
+  --titlebar-text-color: var(--americano);  
 
-  --background-primary: var(--latte); 
+  --background-primary: var(--milk-foam); 
   --background-primary-alt: var(--latte);
   --background-secondary: var(--luwak-white); 
   --background-secondary-alt: var(--hazelnut);
@@ -217,10 +217,11 @@ body {
   --text-selection: var(--cappucino);
 
   --nav-header-color: var(--dark-beans);
-  --nav-item-color: var(--americano);
+  --nav-item-color: var(--dark-beans);
   --nav-item-color-hover: var(--latte);
   --nav-item-color-selected: #00FF00;
   --nav-item-color-highlighted: var(--red-robusta-beans);
+  
   --nav-item-background-hover: var(--hazelnut);
   --nav-item-background-selected: ;
 
@@ -235,6 +236,10 @@ body {
   --link-color-hover: var(--milk-foam);
   --link-unresolved-color: var(--mocccacino);
   --link-unresolved-color-hover: var(--mocccacino);
+  --link-unresolved-filter: none;
+  --link-unresolved-opacity:100%;
+  --link-decoration: ;
+  --link-decoration-hover:line-through;  
   
     /* BUTTONS | on todo settings, canvas side buttons */
   --text-on-accent: var(--hazelnut);
@@ -301,8 +306,8 @@ body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-ac
 
 /** ### Nav Line Highlight File Active Stying ### **/
 .nav-file-title.is-active {
-    background: var(--light-beans);
-    color: var(--milk-foam);
+    background: var(--background-primary);
+    color: var(--text-normal);
     border-radius:  var(--radius-s);
     border-image-slice: 1;
     border-top: 0px solid;
@@ -331,6 +336,21 @@ body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-ac
 .nav-file-title .nav-file-title-content::before { 
     content: '📝 '; }
 /* File Explorer Icon ==================== File Explorer Icon ==================== File Explorer Icon */
+
+
+
+
+/* Fonts ====================================== Fonts ====================================== Fonts */
+.markdown-source-view {
+  font-family: monospace;} /* For the legacy editor (editing view) */
+.markdown-source-view.mod-cm6 .cm-scroller {
+  font-family: Helvetica;} /* For the new editor (live preview and source mode) */
+.markdown-preview-view,
+.cm-scroller {
+  font-family: Helvetica;} /* For reading view */
+/* Fonts ====================================== Fonts ====================================== Fonts */
+
+
 
 
 /* Prompt ====================================== prompt ====================================== propmt */
@@ -574,9 +594,8 @@ body{
   margin-block-end: 0.5em; }
 /* The Horizontal Line Customization ====================================================================================================================== */
 
-
-
-
-
-
+/* cursor caret */
+.markdown-source-view.mod-cm6 .cm-content {
+  caret-color: var(--red-robusta-beans);
+  border-bottom: 2.25px solid;}
 
