@@ -12,7 +12,7 @@
   --green-beans: #00FF00;
 
   /* Balanced*/
-  --cappucino: #755535;
+  --cappucino: 117, 85, 53;
   --balanced-brew:#998A6B; 
   --light-beans: #504010;
   --hazelnut: #B0A050;
@@ -80,8 +80,8 @@ body {
   --text-error-hover: var(--red-robusta-beans);
   --text-highlight-bg: var(--mocccacino);
   --text-highlight-bg-active: var(--golden-brew);
-  --text-selection: var(--cappucino);
-
+  --text-selection:rgba(var(--cappucino), 0.5);
+  
     /* BUTTONS | on todo settings, canvas side buttons */
   --text-on-accent: var(--milk-foam);
   --text-on-accent-hover: var(--latte);
@@ -205,7 +205,7 @@ body {
 
 /* Text */
   --text-accent: var(--caramel);
-  --text-accent-hover: var(--rich-brew);
+  --text-accent-hover: var(--mocccacino);
   --text-normal: var(--americano);	
   --text-muted: var(--dark-beans);    
   --text-faint: var(--americano);	
@@ -214,7 +214,7 @@ body {
   --text-highlight-color: var(--milk-foam);
   --text-highlight-bg: var(--milk-foam);
   --text-highlight-bg-active: var(--hazelnut);
-  --text-selection: var(--cappucino);
+  --text-selection:rgba(var(--cappucino), 0.5);
 
   --nav-header-color: var(--dark-beans);
   --nav-item-color: var(--dark-beans);
@@ -595,6 +595,7 @@ body{
 /* The Horizontal Line Customization ====================================================================================================================== */
 
 /* cursor caret */
+/* Inspired from: https://github.com/Jopp-gh/Obsidian-Dune84 */
 .markdown-source-view.mod-cm6 .cm-content {
   caret-color: var(--red-robusta-beans);
   border-bottom: 2.25px solid;}
