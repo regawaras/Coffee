@@ -214,8 +214,8 @@ body {
   --text-accent: var(--caramel);
   --text-accent-hover: var(--mocccacino);
   --text-normal: var(--americano);	
-  --text-muted: var(--dark-beans);    
-  --text-faint: var(--americano);	
+  --text-muted: var(--mocccacino);    
+  --text-faint: var(--mocccacino);	
   --text-error: var(--red-robusta-beans);	
   --text-error-hover: var(--red-robusta-beans);
   --text-highlight-color: var(--milk-foam);
@@ -231,7 +231,7 @@ body {
   --h6-color: var(--hazelnut);
 
   --nav-header-color: var(--dark-beans);
-  --nav-item-color: var(--dark-beans);
+  --nav-item-color: var(--light-beans);
   --nav-item-color-hover: var(--latte);
   --nav-item-color-selected: #00FF00;
   --nav-item-color-highlighted: var(--red-robusta-beans);
@@ -247,7 +247,7 @@ body {
   --nav-collapse-icon-color-collapsed: ;
 
   --link-color:var(--mocccacino);
-  --link-color-hover: var(--milk-foam);
+  --link-color-hover: var(--caramel);
   --link-unresolved-color: var(--mocccacino);
   --link-unresolved-color-hover: var(--mocccacino);
   --link-unresolved-filter: none;
@@ -352,7 +352,13 @@ body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-ac
 /* File Explorer Icon ==================== File Explorer Icon ==================== File Explorer Icon */
 
 
-
+/* Highlight ====================================== Highlight ====================================== Highlight */
+.cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight,
+.markdown-rendered mark {
+    background-color: var(--crema);
+    color: var(--text-normal);
+    padding: 1px 3px;}
+/* Highlight ====================================== Highlight ====================================== Highlight */
 
 /* Fonts ====================================== Fonts ====================================== Fonts */
 .markdown-source-view {
@@ -363,9 +369,6 @@ body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-ac
 .cm-scroller {
   font-family: Helvetica;} /* For reading view */
 /* Fonts ====================================== Fonts ====================================== Fonts */
-
-
-
 
 /* Prompt ====================================== prompt ====================================== propmt */
 /* Prompt ====================================== prompt ====================================== propmt */
@@ -519,7 +522,6 @@ li.is-collapsed .list-bullet:after, .is-collapsed~.cm-formatting-list .list-bull
     opacity: 0; 
 /* Lists ======================================== Lists ======================================== List */
 
-
 /* Number list =============================== Number list ============================== Number list */
 /*Styles Default Number List*/
 ol>li::marker, ul>li::marker, .cm-s-obsidian .cm-formatting-list {
@@ -540,8 +542,6 @@ ol>li::marker, ul>li::marker, .cm-s-obsidian .cm-formatting-list {
     margin-left: 10px; }
 /* Number list =============================== Number list ============================== Number list */
 
-
-
 /* This is a fork from 2 Obsidian Themes i found on, that have the similar design, so i make it a completely easy to use for everyone else  */
 
 /* The Horizontal Line Customization  */
@@ -554,13 +554,8 @@ body{
 --win-maximize: url("data:image/svg+xml,%3Csvg fill='none' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m4.5 3c-.82843 0-1.5.67157-1.5 1.5v7c0 .8284.67157 1.5 1.5 1.5h7c.8284 0 1.5-.6716 1.5-1.5v-7c0-.82843-.6716-1.5-1.5-1.5zm0 1h7c.2761 0 .5.22386.5.5v7c0 .2761-.2239.5-.5.5h-7c-.27614 0-.5-.2239-.5-.5v-7c0-.27614.22386-.5.5-.5z' fill='%23212121'/%3E%3C/svg%3E");
 --win-minimize: url("data:image/svg+xml,%3Csvg fill='none' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23212121'%3E%3Cpath d='m5.08496 4c.20592-.5826.76154-1 1.41465-1h3.5c1.65689 0 2.99999 1.34315 2.99999 3v3.5c0 .6531-.4174 1.2087-1 1.4146v-4.9146c0-1.10457-.8954-2-1.99999-2z'/%3E%3Cpath d='m4.5 5h5c.8284 0 1.5.67157 1.5 1.5v5c0 .8284-.6716 1.5-1.5 1.5h-5c-.82843 0-1.5-.6716-1.5-1.5v-5c0-.82843.67157-1.5 1.5-1.5zm0 1c-.27614 0-.5.22386-.5.5v5c0 .2761.22386.5.5.5h5c.27614 0 .5-.2239.5-.5v-5c0-.27614-.22386-.5-.5-.5z'/%3E%3C/g%3E%3C/svg%3E");
 }
-/* Heading Line Preview */
-
-
-/* Heading Line Reader */
 
 /* The Horizontal Line Customization ====================================================================================================================== */
-
 .hr.cm-line hr {
   margin-block-start: 2em;
   margin-block-end: 0.8em;
@@ -569,8 +564,6 @@ body{
   border-width: 1px;
   text-align: -webkit-center;
   border-image: linear-gradient(to left, transparent, var(--text-accent) 45%, transparent 45%, transparent 55%, var(--text-accent) 5%, transparent) 3; }
-
-
 /* Logo for Heading Line*/
 .markdown-preview-view hr::after {
   content: ' ';
@@ -582,7 +575,6 @@ body{
   position: absolute;
   transform: translate(-45%, -50%);
   padding: 1rem; }
-
 /* The Logo Icon Source on Editing Mode  */
 .hr.cm-line hr::after {
   content: ' ';
@@ -594,8 +586,6 @@ body{
   position: absolute;
   transform: translate(-40%, -40%);
   padding: 1rem; }
-
-
 /* make it center and works on Reading View Mode */
 .markdown-preview-view hr {
   margin-block-start: 3em;
@@ -608,8 +598,8 @@ body{
   margin-block-end: 0.5em; }
 /* The Horizontal Line Customization ====================================================================================================================== */
 
-/* cursor caret */
+/* cursor caret ====================================================== */
 /* Inspired from: https://github.com/Jopp-gh/Obsidian-Dune84 */
 .markdown-source-view.mod-cm6 .cm-content {
-  caret-color: var(--red-robusta-beans);
-  border-bottom: 2.25px solid;}
+  caret-color: var(--red-robusta-beans);}
+/* cursor caret ====================================================== */
