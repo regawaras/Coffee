@@ -81,6 +81,13 @@ body {
   --text-highlight-bg: var(--mocccacino);
   --text-highlight-bg-active: var(--golden-brew);
   --text-selection:rgba(var(--cappucino), 0.5);
+
+  --h1-color: var(--hazelnut);
+  --h2-color: var(--crema);
+  --h3-color: var(--caramel);
+  --h4-color: var(--caramel);
+  --h5-color: var(--caramel);
+  --h6-color: var(--caramel);
   
     /* BUTTONS | on todo settings, canvas side buttons */
   --text-on-accent: var(--milk-foam);
@@ -215,6 +222,13 @@ body {
   --text-highlight-bg: var(--milk-foam);
   --text-highlight-bg-active: var(--hazelnut);
   --text-selection:rgba(var(--cappucino), 0.5);
+
+  --h1-color: var(--mocccacino);
+  --h2-color: var(--caramel);
+  --h3-color: var(--hazelnut);
+  --h4-color: var(--hazelnut);
+  --h5-color: var(--hazelnut);
+  --h6-color: var(--hazelnut);
 
   --nav-header-color: var(--dark-beans);
   --nav-item-color: var(--dark-beans);
@@ -599,4 +613,3 @@ body{
 .markdown-source-view.mod-cm6 .cm-content {
   caret-color: var(--red-robusta-beans);
   border-bottom: 2.25px solid;}
-
