@@ -8,11 +8,11 @@
   --mocccacino: #6F3F00;
   --burnt-roast: #0F0B00;
   
-  --red-robusta-beans: #FF5500;
+  --red-robusta-beans: #FF3000;
   --green-beans: #00FF00;
 
   /* Balanced*/
-  --cappucino: 117, 85, 53;
+  --cappucino: #885500;
   --balanced-brew:#998A6B; 
   --light-beans: #504010;
   --hazelnut: #B0A050;
@@ -80,7 +80,7 @@ body {
   --text-error-hover: var(--red-robusta-beans);
   --text-highlight-bg: var(--mocccacino);
   --text-highlight-bg-active: var(--golden-brew);
-  --text-selection:rgba(var(--cappucino), 0.5);
+  --text-selection:var(--red-robusta-beans);
 
   --h1-color: var(--hazelnut);
   --h2-color: var(--crema);
@@ -94,7 +94,7 @@ body {
   --text-on-accent-hover: var(--latte);
   --interactive-normal: var(--golden-brew);	
   --interactive-hover: var(--golden-brew);
-  --interactive-accent: var(--cappucino);	
+  --interactive-accent: var(--crema); /* Vim Cursor */
   --interactive-accent-hover: var(--americano);
   --interactive-success: var(--green-beans);
 
@@ -221,8 +221,8 @@ body {
   --text-highlight-color: var(--milk-foam);
   --text-highlight-bg: var(--milk-foam);
   --text-highlight-bg-active: var(--hazelnut);
-  --text-selection:rgba(var(--cappucino), 0.5);
-
+  --text-selection:var(--red-robusta-beans);
+  
   --h1-color: var(--mocccacino);
   --h2-color: var(--caramel);
   --h3-color: var(--hazelnut);
@@ -232,7 +232,7 @@ body {
 
   --nav-header-color: var(--dark-beans);
   --nav-item-color: var(--light-beans);
-  --nav-item-color-hover: var(--latte);
+  --nav-item-color-hover: var(--ame);
   --nav-item-color-selected: #00FF00;
   --nav-item-color-highlighted: var(--red-robusta-beans);
   
@@ -256,12 +256,12 @@ body {
   --link-decoration-hover:line-through;  
   
     /* BUTTONS | on todo settings, canvas side buttons */
-  --text-on-accent: var(--hazelnut);
-  --text-on-accent-hover: var(--milk-foam);
+  --text-on-accent: var(--americano);
+  --text-on-accent-hover: var(--americano);
   --interactive-normal: var(--milk-foam);	
-  --interactive-hover: var(--milk-foam);
-  --interactive-accent: var(--milk-foam);	
-  --interactive-accent-hover: var(--milk-foam);
+  --interactive-hover: var(--red-robusta-beans);  /* calendar cursor */
+  --interactive-accent: var(--caramel); /* Vim Cursor */
+  --interactive-accent-hover: var(--red-robusta-beans);
   --interactive-success: var(--red-robusta-beans);
 
   --tag-color: var(--mocccacino);
@@ -282,9 +282,9 @@ body {
   --table-column-alt-background:;
   --table-row-background-hover: var(--background-secondary-alt) ;
   --table-row-alt-background var(--background-secondary-alt);
-  --table-selection: var(--background-secondary-alt);
+  --table-selection: var(--cappucino);
   --table-selection-blend-mode: soft-light ;
-  --table-selection-border-color: var(--accent);
+  --table-selection-border-color: var(--cappucino);
   --table-drag-handle-color: var(--accent);
   --table-drag-handle-color-active: var(--text-normal);
   --table-drag-handle-background: var(--text-accent);
@@ -446,35 +446,6 @@ body {
 /* Upper Left Obsidian Logo Side Dock Toggle  ======================================================= */
 
 
-/* Calendar Table Color Weekday  =======================================*/
-/*-----------Rounded corners for tables--------*/
-/*By @FireIsGood : https://forum.obsidian.md/t/adding-rounded-corners-to-markdown-tables-with-snippets-a-clean-solution/60551 */
-body:not(.mod-rtl) {
-  table {
-    border-collapse: separate;
-    border-spacing: 0; }
-  th:first-child {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px }
-  th:last-child {
-    border-top-right-radius: 10px; 
-    border-bottom-right-radius: 10px }
-  td, th {
-    border-width: 0px 0px 1px 1px; }
-}
-  table
-    thead {
-  	background-color: var(--background-primary);
-  	font-weight: bold; }
-  table tr:nth-child(),
-thead {
-    background-color: #151000; }
-body:not(.no-calendar) #calendar-container {
-  --color-background-weeknum: transparent;
-  --color-background-weekend: var(--background-primary);
-}
-/* Calendar Table Color Weekday  =======================================*/
-
 /* This is a fork from 2 Obsidian Themes i found on, that have the similar design, so i make it a completely easy to use for everyone else  */
 
 /* Obsidian Separator Line  ================================================= Obsidian Separator Line */
@@ -603,3 +574,4 @@ body{
 .markdown-source-view.mod-cm6 .cm-content {
   caret-color: var(--red-robusta-beans);}
 /* cursor caret ====================================================== */
+
