@@ -4,16 +4,15 @@
   /* Darker */
   --americano: #0F0A00; 
   --dark-roast: #603020;
-  --dark-beans: #181200;
-  --mocccacino: #302000;
+  --dark-beans: #201500;
+  --mocccacino: #6F3F00;
   --burnt-roast: #0F0B00;
   
-  --cappucino: #83653a;
   --red-robusta-beans: #FF5500;
   --green-beans: #00FF00;
 
   /* Balanced*/
-  --mid-kaffe: #755535;
+  --cappucino: #755535;
   --balanced-brew:#998A6B; 
   --light-beans: #504010;
   --hazelnut: #B0A050;
@@ -28,8 +27,8 @@
 
   /* Lighter */
   --milk-foam: #FFFFCC;
-  --latte-foam: #FFFFAA;
-  --latte: #E0E090;
+  --luwak-white: #FFF0AA;
+  --latte: #E0D080;
 }
 
 body {
@@ -48,6 +47,15 @@ body {
 }
 
 .theme-dark {
+  
+/* Will Shown when Focussed on Active Obsidian Window  */
+  --titlebar-background-focused: var(--americano);
+/* Will Shown when Focussed on Other Window   */
+  --titlebar-background: var(--dark-beans);
+/* The Upper Right Tabs (Exit, Resize, ) */
+  --titlebar-text-color-focused:var(--milk-foam);
+  --titlebar-text-color: var(--milk-foam);
+  
   --background-primary: var(--dark-beans);
   --background-primary-alt: var(--burnt-roast);
   --background-secondary: var(--americano);
@@ -59,7 +67,7 @@ body {
   --background-modifier-success: var(--green-beans);
   --background-modifier-error: var(--red-robusta-beans);	
   --background-modifier-error-hover: var(--red-robusta-beans);	
-  --background-modifier-cover: #00000088; /* Change It and You will know when you check Command Bar */
+  --background-modifier-cover: #00000088; /* You will know when you check Command Bar */
 
   /* Text */
   --text-accent: var(--caramel);
@@ -69,7 +77,7 @@ body {
   --text-faint: var(--hazelnut) ;	
   --text-error: var(--red-robusta-beans);	
   --text-error-hover: var(--red-robusta-beans);
-  --text-highlight-bg: var(--crema);
+  --text-highlight-bg: var(--mocccacino);
   --text-highlight-bg-active: var(--golden-brew);
   --text-selection: var(--cappucino);
 
@@ -79,19 +87,13 @@ body {
   --text-on-accent-hover: var(--latte);
   --interactive-normal: var(--golden-brew);	
   --interactive-hover: var(--golden-brew);
-  --interactive-accent: var(--mid-kaffe);	
+  --interactive-accent: var(--cappucino);	
   --interactive-accent-hover: var(--americano);
   --interactive-success: var(--green-beans);
 
-  --text-title-h1: #FF0000;
-  --text-title-h2: #FF0000;
-  --text-title-h3: #FF0000;
-  --text-title-h4: #FF0000;
-  --text-title-h5: #FF0000;
-
-  --link-color: var(--caramel);
-  --link-color-hover: var(--light-beans);
-  --link-unresolved-color: var(--caramel);
+  --link-color: var(--hazelnut);
+  --link-color-hover: var(--crema);
+  --link-unresolved-color: var(--hazelnut);
   --link-unresolved-filter: none;
   --link-unresolved-opacity: 70%;
   --link-decoration: none ;
@@ -138,14 +140,6 @@ body {
   --code-string:  #507080;
   --code-tag: #FF00FF;
   --code-value:  #FF00FF;
-  
-/* Will Shown when Focussed on Active Obsidian Window  */
-  --titlebar-background-focused: var(--light-beans);
-/* Will Shown when Focussed on Other Window   */
-  --titlebar-background: var(--dark-beans);
-/* The Upper Right Tabs (Exit, Resize, ) */
-  --titlebar-text-color-focused:var(--milk-foam);
-  --titlebar-text-color: var(--milk-foam);
 
   --icon-opacity: 100%;
   --icon-color:  var(--hazelnut);
@@ -187,10 +181,18 @@ body {
   --hr-thickness: 7px;
   --line-active: var(--milk-foam);}
 
-.theme-light {
+.theme-light {  
+/* Will Shown when Focussed on Active Obsidian Window  */
+  --titlebar-background-focused: var(--luwak-white);
+/* Will Shown when Focussed on Other Window   */
+  --titlebar-background: var(--dark-beans);
+/* The Upper Right Tabs (Exit, Resize, ) */
+  --titlebar-text-color-focused:var(--milk-foam);
+  --titlebar-text-color: var(--milk-foam);  
+
   --background-primary: var(--latte); 
   --background-primary-alt: var(--latte);
-  --background-secondary: var(--latte-foam); 
+  --background-secondary: var(--luwak-white); 
   --background-secondary-alt: var(--hazelnut);
   --background-modifier-border: var(--latte);
   --background-modifier-form-field: var(latte);
@@ -210,7 +212,7 @@ body {
   --text-error: var(--red-robusta-beans);	
   --text-error-hover: var(--red-robusta-beans);
   --text-highlight-color: var(--milk-foam);
-  --text-highlight-bg: var(--light-beans);
+  --text-highlight-bg: var(--milk-foam);
   --text-highlight-bg-active: var(--hazelnut);
   --text-selection: var(--cappucino);
 
@@ -229,10 +231,10 @@ body {
   --nav-collapse-icon-color: #906000;
   --nav-collapse-icon-color-collapsed: ;
 
-  --link-color:var(--caramel);
-  --link-color-hover: var(--crema);
-  --link-unresolved-color: var(--caramel);
-  --link-unresolved-color-hover: var(--caramel);
+  --link-color:var(--mocccacino);
+  --link-color-hover: var(--milk-foam);
+  --link-unresolved-color: var(--mocccacino);
+  --link-unresolved-color-hover: var(--mocccacino);
   
     /* BUTTONS | on todo settings, canvas side buttons */
   --text-on-accent: var(--hazelnut);
@@ -243,8 +245,8 @@ body {
   --interactive-accent-hover: var(--milk-foam);
   --interactive-success: var(--red-robusta-beans);
 
-  --tag-color: var(--caramel);
-  --tag-color-hover: var(--caramel);
+  --tag-color: var(--mocccacino);
+  --tag-color-hover: var(--crema);
   --tag-background:;  var(--americano);
   --tag-background-hover: var(--americano);
   --tag-border-color:var(--americano) ;
@@ -273,7 +275,7 @@ body {
 /* Primary Tab Line Highlight ======= Primary Tab Line Hightlight ======== Primary Tab Line Highlight */
 /* inspired from : Cyber Glow Obsidian Themes | https://github.com/ArtexJay/Obsidian-CyberGlow */
 body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-active:not(:has(.mk-note-footer, .mk-floweditor-container)) {
-    background: rgba(125, 125, 100, 0.25);
+    background: rgba(170, 100, 0, 0.3);
     border-radius:  var(--radius-s);
     border-image-slice: 1;
     border-top: 1px solid;
@@ -281,7 +283,7 @@ body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-ac
     border-bottom: 1px solid; }
 /* ### Hover Line Highlight on Main Tabs ### */
 .markdown-source-view.mod-cm6 .cm-line:hover {
-    background: rgba(125, 125, 100, 0.15);
+    background: rgba(140, 100, 0, 0.15);
     border-radius:  var(--radius-s);
     border-image-slice: 1;
     border-top: 1px solid;
