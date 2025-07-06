@@ -1,44 +1,48 @@
 /* Coffee Obsidian Themes by @regawaras */
 
 :root {
-  /* Darkish*/
+  /* Darker */
   --americano: #0F0A00; 
   --dark-roast: #603020;
   --dark-beans: #181200;
-  --green-beans: #00FF00;
   --mocccacino: #302000;
-  
-  --light-beans: #504010;
-  
-  --hazelnut: #B0A050;
-  
-  --cappucino: #B49F86;
-  --rich-brew: #904000;
-  --red-robusta-beans: #FF0000;
-
-  --mid-kaffe: #755535;
-  --balanced-brew:#998A6B; 
-  
-  --crema: #DDAA00;
-  --cafe-au-lait: #CCAA55;
   --burnt-roast: #0F0B00;
   
+  --cappucino: #83653a;
+  --red-robusta-beans: #FF5500;
+  --green-beans: #00FF00;
+
+  /* Balanced*/
+  --mid-kaffe: #755535;
+  --balanced-brew:#998A6B; 
+  --light-beans: #504010;
+  --hazelnut: #B0A050;
+
+  /* Yellowish*/
+  --crema: #DDAA00;
   --caramel: #AA7500;
+  --cafe-au-lait: #CCAA55;
+  --rich-brew: #904000;
+  
   --golden-brew: #906000;
 
-  --latte: #E0E090;
-  --latte-foam: #E0D1C2;
+  /* Lighter */
   --milk-foam: #FFFFCC;
+  --latte-foam: #FFFFAA;
+  --latte: #E0E090;
 }
 
 body {
   --accent-h: 35;
   --accent-s: 50%;
   --accent-l: 25%;
-  --font-default: "Cascadia Mono";
+  
+  --font-default: "Arial Black";
   --font-monospace-default: "Cascadia Mono";
   --font-size-default: 20px; 
-
+  
+  --link-external-color: #005555;
+  --link-external-color-hover: #00FFFF;
   --link-external-decoration: none;
   --link-external-decoration-hover: underline
 }
@@ -50,12 +54,12 @@ body {
   --background-secondary-alt: var(--light-beans);
   --background-modifier-border: var(--light-beans);
   --background-modifier-form-field: var(--americano);
-  --background-modifier-form-field-highlighted: #151000;
+  --background-modifier-form-field-highlighted: var(--light-beans);
   --background-modifier-box-shadow: var(--light-beans);
-  --background-modifier-success: #00FF00;
-  --background-modifier-error: #FFFF00;	
-  --background-modifier-error-hover: #FF5000;	
-  --background-modifier-cover: #00000000;	
+  --background-modifier-success: var(--green-beans);
+  --background-modifier-error: var(--red-robusta-beans);	
+  --background-modifier-error-hover: var(--red-robusta-beans);	
+  --background-modifier-cover: #00000088; /* Change It and You will know when you check Command Bar */
 
   /* Text */
   --text-accent: var(--caramel);
@@ -64,10 +68,10 @@ body {
   --text-muted: var(--milk-foam);	
   --text-faint: var(--hazelnut) ;	
   --text-error: var(--red-robusta-beans);	
-  --text-error-hover: #FF5000;
-  --text-highlight-bg: #302000;
+  --text-error-hover: var(--red-robusta-beans);
+  --text-highlight-bg: var(--crema);
   --text-highlight-bg-active: var(--golden-brew);
-  --text-selection: var(--mid-kaffe);
+  --text-selection: var(--cappucino);
 
 
     /* BUTTONS | on todo settings, canvas side buttons */
@@ -84,9 +88,6 @@ body {
   --text-title-h3: #FF0000;
   --text-title-h4: #FF0000;
   --text-title-h5: #FF0000;
-
-  --link-external-color: #00FFFF;
-  --link-external-color-hover: #005555;
 
   --link-color: var(--caramel);
   --link-color-hover: var(--light-beans);
@@ -141,42 +142,42 @@ body {
 /* Will Shown when Focussed on Active Obsidian Window  */
   --titlebar-background-focused: var(--light-beans);
 /* Will Shown when Focussed on Other Window   */
-  --titlebar-background: var(--hazelnut);
+  --titlebar-background: var(--dark-beans);
 /* The Upper Right Tabs (Exit, Resize, ) */
   --titlebar-text-color-focused:var(--milk-foam);
   --titlebar-text-color: var(--milk-foam);
 
   --icon-opacity: 100%;
   --icon-color:  var(--hazelnut);
-  --icon-color-hover: #FFCC00;
+  --icon-color-hover: var(--milk-foam);
 
   --nav-item-color: var(--hazelnut);
-  --nav-item-color-hover: #FFFFFF;
+  --nav-item-color-hover: var(--milk-foam);
   --nav-item-color-active: var(--caramel);
   --nav-item-color-selected:var(--caramel);
   --nav-item-color-highlighted: var(--red-robusta-beans);
-  --nav-item-background-hover: #151000;
-  --nav-item-background-active:	#151000;
-  --nav-item-background-selected: #FF0000;
+  --nav-item-background-hover: var(--light-beans);
+  --nav-item-background-active:	var(--dark-beans);
+
+  --nav-item-background-selected: var(--red-robusta-beans);
   --nav-indetation-guide-color:	#FFFF00;
   --nav-collapse-icon-color: #906000;
   --nav-collapse-icon-color-collapsed: #FFFF00;
   
-  
   --prompt-border-color: var(--caramel);
 
-  --tab-background-active: #0C0C00;
+  --tab-background-active: var(--dark-beans);
   --tab-text-color: var(--hazelnut);
-  --tab-text-color-active: #FFCC00;
+  --tab-text-color-active: var(--hazelnut);
   --tab-text-color-focused: var(--hazelnut);
-  --tab-text-color-focused-active: #FFCC00;
-  --tab-text-color-focused-highlighted: #DDAA00;
-  --tab-text-color-focused-active-current: #FFCC00;
-  --tab-container-background: #151000;
-  --tab-divider-color: #906000;
+  --tab-text-color-focused-active: var(--caramel);
+  --tab-text-color-focused-highlighted: var(--milk-foam);
+  --tab-text-color-focused-active-current: var(--caramel);
+  --tab-container-background: var(--americano);
+  --tab-divider-color: var(--americano);
   
-  --drag-ghost-background: #906000;
-  --blockquote-color: #151000;
+  --drag-ghost-background: var(--caramel);
+  --blockquote-color: var(--mocccacino);
 
 /* for line separator LIHNE */
   --hr-line-offset: 5%;
@@ -184,35 +185,36 @@ body {
   --hr-text-color: #DDAA00;
   --hr-text-offset: 2ch;
   --hr-thickness: 7px;
-  --line-active: var(--milk-foam);
-}
+  --line-active: var(--milk-foam);}
 
 .theme-light {
   --background-primary: var(--latte); 
   --background-primary-alt: var(--latte);
-  --background-secondary: var(--milk-foam); 
+  --background-secondary: var(--latte-foam); 
   --background-secondary-alt: var(--hazelnut);
   --background-modifier-border: var(--latte);
   --background-modifier-form-field: var(latte);
   --background-modifier-form-field-highlighted: #151000;
   --background-modifier-box-shadow: #151000;
-  --background-modifier-success: #00FF00;	
+  --background-modifier-success: var(--green-beans);
   --background-modifier-error: #FFFF00;	
   --background-modifier-error-hover: #FF5000;	
-  --background-modifier-cover: #00000000;	
+  --background-modifier-cover: #F0F00000;
 
 /* Text */
   --text-accent: var(--caramel);
-  --text-accent-hover: var(--rich-brew); 
+  --text-accent-hover: var(--rich-brew);
   --text-normal: var(--americano);	
-  --text-muted: var(--light-beans);    
+  --text-muted: var(--dark-beans);    
   --text-faint: var(--americano);	
   --text-error: var(--red-robusta-beans);	
-  --text-error-hover: #FF5000;	
-  --text-highlight-bg: var(--hazelnut);
+  --text-error-hover: var(--red-robusta-beans);
+  --text-highlight-color: var(--milk-foam);
+  --text-highlight-bg: var(--light-beans);
   --text-highlight-bg-active: var(--hazelnut);
-  --text-selection: var(--mid-kaffe);
-  
+  --text-selection: var(--cappucino);
+
+  --nav-header-color: var(--dark-beans);
   --nav-item-color: var(--americano);
   --nav-item-color-hover: var(--latte);
   --nav-item-color-selected: #00FF00;
@@ -223,25 +225,23 @@ body {
   --nav-item-color-active: var(--light-beans);
   --nav-item-background-active:	var(--hazelnut);
 
-  --nav-indetation-guide-color:	#FFFF00;
+  --nav-indetation-guide-color:	var(--dark-beans);
   --nav-collapse-icon-color: #906000;
-  --nav-collapse-icon-color-collapsed: #FF0000;
+  --nav-collapse-icon-color-collapsed: ;
 
   --link-color:var(--caramel);
-  --link-color-hover: var(--caramel);
+  --link-color-hover: var(--crema);
   --link-unresolved-color: var(--caramel);
   --link-unresolved-color-hover: var(--caramel);
-  --link-external-color: #005555;
-  --link-external-color-hover: #00FFFF;
-
+  
     /* BUTTONS | on todo settings, canvas side buttons */
   --text-on-accent: var(--hazelnut);
   --text-on-accent-hover: var(--milk-foam);
   --interactive-normal: var(--milk-foam);	
   --interactive-hover: var(--milk-foam);
   --interactive-accent: var(--milk-foam);	
-  --interactive-accent-hover: var(--milk-foam)
-  --interactive-success: #FF0000;
+  --interactive-accent-hover: var(--milk-foam);
+  --interactive-success: var(--red-robusta-beans);
 
   --tag-color: var(--caramel);
   --tag-color-hover: var(--caramel);
@@ -254,7 +254,7 @@ body {
   --table-header-background: var(--background-secondary-alt);
   --table-header-background-hover: var(--background-secondary);
   --table-header-border-color: var(--background-secondary-alt);
-  --table-header-font: #FFFFFF;
+  --table-header-font:  var(--milk-foam);
   --table-header-weight: bold;
   --table-header-color: var(--text-accent);
   --table-text-color: var(--text-normal);
@@ -270,10 +270,10 @@ body {
   --table-drag-handle-background-active: var(--accent);
 }
 
-/*========== Main Tabs Line Highlight ============*/
-/* inspired from : Cyber Glow Obsidian Themes | source: https://github.com/ArtexJay/Obsidian-CyberGlow */
+/* Primary Tab Line Highlight ======= Primary Tab Line Hightlight ======== Primary Tab Line Highlight */
+/* inspired from : Cyber Glow Obsidian Themes | https://github.com/ArtexJay/Obsidian-CyberGlow */
 body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-active:not(:has(.mk-note-footer, .mk-floweditor-container)) {
-    background: rgba(180, 150, 85, 0.5);
+    background: rgba(125, 125, 100, 0.25);
     border-radius:  var(--radius-s);
     border-image-slice: 1;
     border-top: 1px solid;
@@ -281,19 +281,17 @@ body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-ac
     border-bottom: 1px solid; }
 /* ### Hover Line Highlight on Main Tabs ### */
 .markdown-source-view.mod-cm6 .cm-line:hover {
-    background: rgba(180, 150, 85, 0.3);
+    background: rgba(125, 125, 100, 0.15);
     border-radius:  var(--radius-s);
     border-image-slice: 1;
     border-top: 1px solid;
     border-image-source: linear-gradient(to right, transparent, #151000, transparent);
     border-bottom: 1px solid;
     opacity: 1; }
-/*============ Main Tabs Line Highlight ==============*/
+/* Primary Tab Line Highlight ======= Primary Tab Line Hightlight ======== Primary Tab Line Highlight */
 
 /** ### File Explorer Upper border ### **/
 .nav-header {
-    color: var(--milk-foam); 
-    background: var(--dark-beans);
     border-image-slice: 1;
     border-top: 1px solid;
     border-image-source: linear-gradient(to right, transparent, #503010, transparent);
@@ -306,7 +304,7 @@ body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-ac
     border-radius:  var(--radius-s);
     border-image-slice: 1;
     border-top: 0px solid;
-    border-image-source: linear-gradient(to right, transparent, #503010), transparent);
+    border-image-source: linear-gradient(to right, transparent, #503010, transparent);
     border-bottom: 0px solid; }
 /** ### Nav Line Highlight File Active Stying ### **/
 
@@ -314,53 +312,54 @@ body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-ac
 /*Styles Hover for Search Items */
 .tree-item-self.is-clickable:hover,.suggestion-item.is-selected:not(.mod-group):hover {
     background: var(--background-seconds-alt);
-    color: #906000;
+    color: var(--light-beans);
     border-image-slice: 1;
     border-top: 1px solid;
     border-image-source: linear-gradient(to right, transparent, #302000, transparent);
     border-bottom: 1px solid; }
+
 /*============ File Explorer Navigation =================*/
 .nav-file-title.is-dragging {
-    color: var(--background-secondary-alty); }
+    color: var(--background-secondary-alt); }
+/* inspired from : Cyber Glow Obsidian Themes | https://github.com/ArtexJay/Obsidian-CyberGlow */
 
-
-/*============ File Explorer Icon ================= */
+/* File Explorer Icon ==================== File Explorer Icon ==================== File Explorer Icon */
 .nav-folder-title .nav-folder-title-content::before { 
     content: '📂 '; }
 .nav-file-title .nav-file-title-content::before { 
     content: '📝 '; }
-/*============ File Explorer Icon =================*/
+/* File Explorer Icon ==================== File Explorer Icon ==================== File Explorer Icon */
 
 
-/*============ Prompt =================*/
+/* Prompt ====================================== prompt ====================================== propmt */
+/* Prompt ====================================== prompt ====================================== propmt */
 /*Prompt Style*/
 .prompt {
     background: var(--background-settings);
-    backdrop-filter: blur(10px) saturate(120%) !important;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(to top, transparent, #906000 , transparent);
-    border-right: 3px solid;
-    border-left: 3px solid; }
+    backdrop-filter: blur(9px) saturate(120%) !important;
+    border-image-slice: 0;
+    border-image-source: linear-gradient(to top, transparent, var(--light-beans) , transparent);
+    border-right: 1px solid;
+    border-left: 1x solid; }
 /*Prompt Item Style*/
 .suggestion-item {
-    color: var(--text-faint);
-    border-top: 1px solid transparent;
-    border-bottom: 1px solid transparent; }
+    color: ;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent; }
 /*Prompt Tag Color Fixed*/
 .suggestion-item.mod-complex .suggestion-hotkey {
-    background-color: #302000 ;
-    color: #FFAA00; }
+    background-color: var(--mocccacino) ;
+    color: var(--hazelnut); }
 /*Prompt Input*/
 input.prompt-input {
     border-radius: 5px;
     margin: 5px;
-    background: var(--background-settings-2);
-    padding: 10px; }
-/*============ Prompt =================*/
+    background: var(--background-settings-2);x
+    padding: 15px; }
+/* Prompt ====================================== prompt ====================================== propmt */
+/* Prompt ====================================== prompt ====================================== propmt */
 
-
-
-/*=============== Side Dock Toggle Obsidian Logo ================*/
+/* =============== Side Dock Toggle Obsidian Logo ================*/
 /*Custom Styled L-Sidebar Toggle */
 .is-hidden-frameless .sidebar-toggle-button.mod-left>.clickable-icon,
 body:not(.is-tablet) .is-mobile .view-header-nav-buttons,
@@ -378,7 +377,7 @@ body.is-tablet .sidebar-toggle-button.mod-left>.clickable-icon {
 /*Custom Styled L-Sidebar Toggle*/
 /*Hover Highlight for Custom Toggle*/
 body.is-hidden-frameless .sidebar-toggle-button.mod-left:hover {
-    background: var(--text-selection);
+    background: var(--dark-beans);
     border-radius: 5px;
     border-image-slice: 1;
     border-image-source: linear-gradient(to top, transparent, var(--text-accent), transparent);
@@ -400,12 +399,12 @@ body.is-hidden-frameless .sidebar-toggle-button.mod-left:hover {
 .sidebar-toggle-button {
     align-items: center;
     padding: 0 0 0 0; }
-/*=============== Side Dock Toggle Obsidian Logo ================*/
+/* =============== Side Dock Toggle Obsidian Logo ================*/
 
-
+/* Upper Left Obsidian Logo Side Dock Toggle  ======================================================= */
 body {
-    --New-Obsidiantoggle: url("data:image/svg+xml,%3Csvg id='custom-logo' width='512' height='512' viewBox='0 0 512 512' fill='none' xmlns='http://www.w3.org/2000/svg' style='height:100%25;width:100%25;'%3E%3Cdefs%3E%3CradialGradient id='b' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(-48 -185 123 -32 179 429.7)'%3E%3Cstop stop-color='%23fff' stop-opacity='.4'/%3E%3Cstop offset='1' stop-opacity='.1'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(41 -310 229 30 341.6 351.3)'%3E%3Cstop stop-color='%23fff' stop-opacity='.6'/%3E%3Cstop offset='1' stop-color='%23fff' stop-opacity='.1'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(57 -261 178 39 190.5 296.3)'%3E%3Cstop stop-color='%23fff' stop-opacity='.8'/%3E%3Cstop offset='1' stop-color='%23fff' stop-opacity='.4'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(-79 -133 153 -90 321.4 464.2)'%3E%3Cstop stop-color='%23fff' stop-opacity='.3'/%3E%3Cstop offset='1' stop-opacity='.3'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(-29 136 -92 -20 300.7 149.9)'%3E%3Cstop stop-color='%23fff' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23fff' stop-opacity='.2'/%3E%3C/radialGradient%3E%3CradialGradient id='g' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(72 73 -155 153 137.8 225.2)'%3E%3Cstop stop-color='%23fff' stop-opacity='.2'/%3E%3Cstop offset='1' stop-color='%23fff' stop-opacity='.4'/%3E%3C/radialGradient%3E%3CradialGradient id='h' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(20 118 -251 43 215.1 273.7)'%3E%3Cstop stop-color='%23fff' stop-opacity='.1'/%3E%3Cstop offset='1' stop-color='%23fff' stop-opacity='.3'/%3E%3C/radialGradient%3E%3CradialGradient id='i' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(-162 -85 268 -510 374.4 371.7)'%3E%3Cstop stop-color='%23fff' stop-opacity='.2'/%3E%3Cstop offset='.5' stop-color='%23fff' stop-opacity='.2'/%3E%3Cstop offset='1' stop-color='%23fff' stop-opacity='.3'/%3E%3C/radialGradient%3E%3Cfilter id='a' x='80.1' y='37' width='351.1' height='443.2' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='6.5' result='effect1_foregroundBlur_744_9191'/%3E%3C/filter%3E%3C/defs%3E%3Crect id='logo-bg' fill='%23000000' width='512' height='512' rx='100'/%3E%3Cg filter='url(%23a)'%3E%3Cpath d='M359.2 437.5c-2.6 19-21.3 33.9-40 28.7-26.5-7.2-57.2-18.6-84.8-20.7l-42.4-3.2a28 28 0 0 1-18-8.3l-73-74.8a27.7 27.7 0 0 1-5.4-30.7s45-98.6 46.8-103.7c1.6-5.1 7.8-49.9 11.4-73.9a28 28 0 0 1 9-16.5L249 57.2a28 28 0 0 1 40.6 3.4l72.6 91.6a29.5 29.5 0 0 1 6.2 18.3c0 17.3 1.5 53 11.2 76a301.3 301.3 0 0 0 35.6 58.2 14 14 0 0 1 1 15.6c-6.3 10.7-18.9 31.3-36.6 57.6a142.2 142.2 0 0 0-20.5 59.6Z' fill='%23000' fill-opacity='.3'/%3E%3C/g%3E%3Cpath id='arrow' d='M359.9 434.3c-2.6 19.1-21.3 34-40 28.9-26.4-7.3-57-18.7-84.7-20.8l-42.3-3.2a27.9 27.9 0 0 1-18-8.4l-73-75a27.9 27.9 0 0 1-5.4-31s45.1-99 46.8-104.2c1.7-5.1 7.8-50 11.4-74.2a28 28 0 0 1 9-16.6l86.2-77.5a28 28 0 0 1 40.6 3.5l72.5 92a29.7 29.7 0 0 1 6.2 18.3c0 17.4 1.5 53.2 11.1 76.3a303 303 0 0 0 35.6 58.5 14 14 0 0 1 1.1 15.7c-6.4 10.8-18.9 31.4-36.7 57.9a143.3 143.3 0 0 0-20.4 59.8Z' fill='%23616161'/%3E%3Cpath d='M182.7 436.4c33.9-68.7 33-118 18.5-153-13.2-32.4-37.9-52.8-57.3-65.5-.4 1.9-1 3.7-1.8 5.4L96.5 324.8a27.9 27.9 0 0 0 5.5 31l72.9 75c2.3 2.3 5 4.2 7.8 5.6Z' fill='url(%23b)'/%3E%3Cpath d='M274.9 297c9.1.9 18 2.9 26.8 6.1 27.8 10.4 53.1 33.8 74 78.9 1.5-2.6 3-5.1 4.6-7.5a1222 1222 0 0 0 36.7-57.9 14 14 0 0 0-1-15.7 303 303 0 0 1-35.7-58.5c-9.6-23-11-58.9-11.1-76.3 0-6.6-2.1-13.1-6.2-18.3l-72.5-92-1.2-1.5c5.3 17.5 5 31.5 1.7 44.2-3 11.8-8.6 22.5-14.5 33.8-2 3.8-4 7.7-5.9 11.7a140 140 0 0 0-15.8 58c-1 24.2 3.9 54.5 20 95Z' fill='url(%23c)'/%3E%3Cpath d='M274.8 297c-16.1-40.5-21-70.8-20-95 1-24 8-42 15.8-58l6-11.7c5.8-11.3 11.3-22 14.4-33.8a78.5 78.5 0 0 0-1.7-44.2 28 28 0 0 0-39.4-2l-86.2 77.5a28 28 0 0 0-9 16.6L144.2 216c0 .7-.2 1.3-.3 2 19.4 12.6 44 33 57.3 65.3 2.6 6.4 4.8 13.1 6.4 20.4a200 200 0 0 1 67.2-6.8Z' fill='url(%23d)'/%3E%3Cpath d='M320 463.2c18.6 5.1 37.3-9.8 39.9-29a153 153 0 0 1 15.9-52.2c-21-45.1-46.3-68.5-74-78.9-29.5-11-61.6-7.3-94.2.6 7.3 33.1 3 76.4-24.8 132.7 3.1 1.6 6.6 2.5 10.1 2.8l43.9 3.3c23.8 1.7 59.3 14 83.2 20.7Z' fill='url(%23e)'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M255 200.5c-1.1 24 1.9 51.4 18 91.8l-5-.5c-14.5-42.1-17.7-63.7-16.6-88 1-24.3 8.9-43 16.7-59 2-4 6.6-11.5 8.6-15.3 5.8-11.3 9.7-17.2 13-27.5 4.8-14.4 3.8-21.2 3.2-28 3.7 24.5-10.4 45.8-21 67.5a145 145 0 0 0-17 59Z' fill='url(%23f)'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M206 285.1c2 4.4 3.7 8 4.9 13.5l-4.3 1c-1.7-6.4-3-11-5.5-16.5-14.6-34.3-38-52-57-65 23 12.4 46.7 31.9 61.9 67Z' fill='url(%23g)'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M211.1 303c8 37.5-1 85.2-27.5 131.6 22.2-46 33-90.1 24-131l3.5-.7Z' fill='url(%23h)'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M302.7 299.5c43.5 16.3 60.3 52 72.8 81.9-15.5-31.2-37-65.7-74.4-78.5-28.4-9.8-52.4-8.6-93.5.7l-.9-4c43.6-10 66.4-11.2 96 0Z' fill='url(%23i)'/%3E%3C/svg%3E");
-}
+    --New-Obsidiantoggle: url("data:image/svg+xml,%3Csvg id='custom-logo' width='512' height='512' viewBox='0 0 512 512' fill='none' xmlns='http://www.w3.org/2000/svg' style='height:100%25;width:100%25;'%3E%3Cdefs%3E%3CradialGradient id='b' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(-48 -185 123 -32 179 429.7)'%3E%3Cstop stop-color='%23fff' stop-opacity='.4'/%3E%3Cstop offset='1' stop-opacity='.1'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(41 -310 229 30 341.6 351.3)'%3E%3Cstop stop-color='%23fff' stop-opacity='.6'/%3E%3Cstop offset='1' stop-color='%23fff' stop-opacity='.1'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(57 -261 178 39 190.5 296.3)'%3E%3Cstop stop-color='%23fff' stop-opacity='.8'/%3E%3Cstop offset='1' stop-color='%23fff' stop-opacity='.4'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(-79 -133 153 -90 321.4 464.2)'%3E%3Cstop stop-color='%23fff' stop-opacity='.3'/%3E%3Cstop offset='1' stop-opacity='.3'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(-29 136 -92 -20 300.7 149.9)'%3E%3Cstop stop-color='%23fff' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23fff' stop-opacity='.2'/%3E%3C/radialGradient%3E%3CradialGradient id='g' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(72 73 -155 153 137.8 225.2)'%3E%3Cstop stop-color='%23fff' stop-opacity='.2'/%3E%3Cstop offset='1' stop-color='%23fff' stop-opacity='.4'/%3E%3C/radialGradient%3E%3CradialGradient id='h' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(20 118 -251 43 215.1 273.7)'%3E%3Cstop stop-color='%23fff' stop-opacity='.1'/%3E%3Cstop offset='1' stop-color='%23fff' stop-opacity='.3'/%3E%3C/radialGradient%3E%3CradialGradient id='i' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(-162 -85 268 -510 374.4 371.7)'%3E%3Cstop stop-color='%23fff' stop-opacity='.2'/%3E%3Cstop offset='.5' stop-color='%23fff' stop-opacity='.2'/%3E%3Cstop offset='1' stop-color='%23fff' stop-opacity='.3'/%3E%3C/radialGradient%3E%3Cfilter id='a' x='80.1' y='37' width='351.1' height='443.2' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='6.5' result='effect1_foregroundBlur_744_9191'/%3E%3C/filter%3E%3C/defs%3E%3Crect id='logo-bg' fill='%23000000' width='512' height='512' rx='100'/%3E%3Cg filter='url(%23a)'%3E%3Cpath d='M359.2 437.5c-2.6 19-21.3 33.9-40 28.7-26.5-7.2-57.2-18.6-84.8-20.7l-42.4-3.2a28 28 0 0 1-18-8.3l-73-74.8a27.7 27.7 0 0 1-5.4-30.7s45-98.6 46.8-103.7c1.6-5.1 7.8-49.9 11.4-73.9a28 28 0 0 1 9-16.5L249 57.2a28 28 0 0 1 40.6 3.4l72.6 91.6a29.5 29.5 0 0 1 6.2 18.3c0 17.3 1.5 53 11.2 76a301.3 301.3 0 0 0 35.6 58.2 14 14 0 0 1 1 15.6c-6.3 10.7-18.9 31.3-36.6 57.6a142.2 142.2 0 0 0-20.5 59.6Z' fill='%23000' fill-opacity='.3'/%3E%3C/g%3E%3Cpath id='arrow' d='M359.9 434.3c-2.6 19.1-21.3 34-40 28.9-26.4-7.3-57-18.7-84.7-20.8l-42.3-3.2a27.9 27.9 0 0 1-18-8.4l-73-75a27.9 27.9 0 0 1-5.4-31s45.1-99 46.8-104.2c1.7-5.1 7.8-50 11.4-74.2a28 28 0 0 1 9-16.6l86.2-77.5a28 28 0 0 1 40.6 3.5l72.5 92a29.7 29.7 0 0 1 6.2 18.3c0 17.4 1.5 53.2 11.1 76.3a303 303 0 0 0 35.6 58.5 14 14 0 0 1 1.1 15.7c-6.4 10.8-18.9 31.4-36.7 57.9a143.3 143.3 0 0 0-20.4 59.8Z' fill='%23616161'/%3E%3Cpath d='M182.7 436.4c33.9-68.7 33-118 18.5-153-13.2-32.4-37.9-52.8-57.3-65.5-.4 1.9-1 3.7-1.8 5.4L96.5 324.8a27.9 27.9 0 0 0 5.5 31l72.9 75c2.3 2.3 5 4.2 7.8 5.6Z' fill='url(%23b)'/%3E%3Cpath d='M274.9 297c9.1.9 18 2.9 26.8 6.1 27.8 10.4 53.1 33.8 74 78.9 1.5-2.6 3-5.1 4.6-7.5a1222 1222 0 0 0 36.7-57.9 14 14 0 0 0-1-15.7 303 303 0 0 1-35.7-58.5c-9.6-23-11-58.9-11.1-76.3 0-6.6-2.1-13.1-6.2-18.3l-72.5-92-1.2-1.5c5.3 17.5 5 31.5 1.7 44.2-3 11.8-8.6 22.5-14.5 33.8-2 3.8-4 7.7-5.9 11.7a140 140 0 0 0-15.8 58c-1 24.2 3.9 54.5 20 95Z' fill='url(%23c)'/%3E%3Cpath d='M274.8 297c-16.1-40.5-21-70.8-20-95 1-24 8-42 15.8-58l6-11.7c5.8-11.3 11.3-22 14.4-33.8a78.5 78.5 0 0 0-1.7-44.2 28 28 0 0 0-39.4-2l-86.2 77.5a28 28 0 0 0-9 16.6L144.2 216c0 .7-.2 1.3-.3 2 19.4 12.6 44 33 57.3 65.3 2.6 6.4 4.8 13.1 6.4 20.4a200 200 0 0 1 67.2-6.8Z' fill='url(%23d)'/%3E%3Cpath d='M320 463.2c18.6 5.1 37.3-9.8 39.9-29a153 153 0 0 1 15.9-52.2c-21-45.1-46.3-68.5-74-78.9-29.5-11-61.6-7.3-94.2.6 7.3 33.1 3 76.4-24.8 132.7 3.1 1.6 6.6 2.5 10.1 2.8l43.9 3.3c23.8 1.7 59.3 14 83.2 20.7Z' fill='url(%23e)'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M255 200.5c-1.1 24 1.9 51.4 18 91.8l-5-.5c-14.5-42.1-17.7-63.7-16.6-88 1-24.3 8.9-43 16.7-59 2-4 6.6-11.5 8.6-15.3 5.8-11.3 9.7-17.2 13-27.5 4.8-14.4 3.8-21.2 3.2-28 3.7 24.5-10.4 45.8-21 67.5a145 145 0 0 0-17 59Z' fill='url(%23f)'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M206 285.1c2 4.4 3.7 8 4.9 13.5l-4.3 1c-1.7-6.4-3-11-5.5-16.5-14.6-34.3-38-52-57-65 23 12.4 46.7 31.9 61.9 67Z' fill='url(%23g)'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M211.1 303c8 37.5-1 85.2-27.5 131.6 22.2-46 33-90.1 24-131l3.5-.7Z' fill='url(%23h)'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M302.7 299.5c43.5 16.3 60.3 52 72.8 81.9-15.5-31.2-37-65.7-74.4-78.5-28.4-9.8-52.4-8.6-93.5.7l-.9-4c43.6-10 66.4-11.2 96 0Z' fill='url(%23i)'/%3E%3C/svg%3E");}
+/* Upper Left Obsidian Logo Side Dock Toggle  ======================================================= */
 
 
 /* Calendar Table Color Weekday  =======================================*/
@@ -439,7 +438,7 @@ body:not(.no-calendar) #calendar-container {
 
 /* This is a fork from 2 Obsidian Themes i found on, that have the similar design, so i make it a completely easy to use for everyone else  */
 
-/* The Horizontal Line Customization  */
+/* Obsidian Separator Line  ================================================= Obsidian Separator Line */
 body{
 --newoutlined-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='18' height='18' fill='none' stroke='currentColor' stroke-width='32' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E");
 --outlined-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='15 -3 69 106'%3E%3Cpath d='M 30.91 17.52 L 34.43 35.7 M 61.44 14.41 L 62.61 0 M 34.43 35.7 L 37.57 90.47 M 81 26.39 L 61.44 14.41 L 34.43 35.7 L 65.35 100 M 62.61 0 L 30.91 17.52 L 18 45.45 L 37.57 90.47 L 65.35 100 L 70.44 89.8 L 81 26.39 L 62.61 0 Z' stroke='%23000000' stroke-width='4' fill='none'/%3E%3C/svg%3E");
@@ -447,17 +446,11 @@ body{
 --file-line-width: var(--CG-line-width);
 /*max min icons*/
 --win-maximize: url("data:image/svg+xml,%3Csvg fill='none' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m4.5 3c-.82843 0-1.5.67157-1.5 1.5v7c0 .8284.67157 1.5 1.5 1.5h7c.8284 0 1.5-.6716 1.5-1.5v-7c0-.82843-.6716-1.5-1.5-1.5zm0 1h7c.2761 0 .5.22386.5.5v7c0 .2761-.2239.5-.5.5h-7c-.27614 0-.5-.2239-.5-.5v-7c0-.27614.22386-.5.5-.5z' fill='%23212121'/%3E%3C/svg%3E");
---win-minimize: url("data:image/svg+xml,%3Csvg fill='none' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23212121'%3E%3Cpath d='m5.08496 4c.20592-.5826.76154-1 1.41465-1h3.5c1.65689 0 2.99999 1.34315 2.99999 3v3.5c0 .6531-.4174 1.2087-1 1.4146v-4.9146c0-1.10457-.8954-2-1.99999-2z'/%3E%3Cpath d='m4.5 5h5c.8284 0 1.5.67157 1.5 1.5v5c0 .8284-.6716 1.5-1.5 1.5h-5c-.82843 0-1.5-.6716-1.5-1.5v-5c0-.82843.67157-1.5 1.5-1.5zm0 1c-.27614 0-.5.22386-.5.5v5c0 .2761.22386.5.5.5h5c.27614 0 .5-.2239.5-.5v-5c0-.27614-.22386-.5-.5-.5z'/%3E%3C/g%3E%3C/svg%3E");
-}
-/* Heading Line Preview */
+--win-minimize: url("data:image/svg+xml,%3Csvg fill='none' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23212121'%3E%3Cpath d='m5.08496 4c.20592-.5826.76154-1 1.41465-1h3.5c1.65689 0 2.99999 1.34315 2.99999 3v3.5c0 .6531-.4174 1.2087-1 1.4146v-4.9146c0-1.10457-.8954-2-1.99999-2z'/%3E%3Cpath d='m4.5 5h5c.8284 0 1.5.67157 1.5 1.5v5c0 .8284-.6716 1.5-1.5 1.5h-5c-.82843 0-1.5-.6716-1.5-1.5v-5c0-.82843.67157-1.5 1.5-1.5zm0 1c-.27614 0-.5.22386-.5.5v5c0 .2761.22386.5.5.5h5c.27614 0 .5-.2239.5-.5v-5c0-.27614-.22386-.5-.5-.5z'/%3E%3C/g%3E%3C/svg%3E");}
+/* Obsidian Separator Line  ================================================= Obsidian Separator Line */
 
 
-/* Heading Line Reader */
-
-
-
-/*Lists =======================================*=======================*==============================================*==============/
-/*Lists =======================================*=======================*==============================================*==============/
+/* Lists ======================================== Lists ======================================== List */
 /*Sets uncollapsed bullet point with animations*/
 li:not(.is-collapsed) .list-bullet:after, .cm-formatting-list .list-bullet:after {
     content: '▻';
@@ -466,13 +459,11 @@ li:not(.is-collapsed) .list-bullet:after, .cm-formatting-list .list-bullet:after
     font-weight: bold;
     transform: translate(7px, 5px) rotate(90deg);
     text-shadow: 0 0 0px var(--text-accent), 0 0 0px var(--list-marker-color), 0 0 0px var(--text-accent), 0 0 0px var(--text-accent); }
-
 /*Realigns Custom bullet point*/
 .list-bullet {
     align-items: baseline;
     margin-right: 0px;
     opacity: 1; }
-
 /*Sets collapsed bullet point with animations*/
 li.is-collapsed .list-bullet:after, .is-collapsed~.cm-formatting-list .list-bullet:after {
     content: '▻';
@@ -490,11 +481,10 @@ li.is-collapsed .list-bullet:after, .is-collapsed~.cm-formatting-list .list-bull
     background-color: transparent;
     box-shadow: none; }
     opacity: 0; 
-/*Lists =======================================*=======================*==============================================*==============/
-/*Lists =======================================*=======================*==============================================*==============/
+/* Lists ======================================== Lists ======================================== List */
 
-/* Number list ===================================*=======================*==============================================*==============/*/
-/* Number list ===================================*=======================*==============================================*==============/*/
+
+/* Number list =============================== Number list ============================== Number list */
 /*Styles Default Number List*/
 ol>li::marker, ul>li::marker, .cm-s-obsidian .cm-formatting-list {
     color: var(text-accent);
@@ -512,13 +502,11 @@ ol>li::marker, ul>li::marker, .cm-s-obsidian .cm-formatting-list {
 /*Aligns Number List with identation guide*/
 .markdown-rendered ol {
     margin-left: 10px; }
-/*Recheck Position*/
-/* Number list ===================================*=======================*==============================================*==============/*/
-/* Number list ===================================*=======================*==============================================*==============/*/
+/* Number list =============================== Number list ============================== Number list */
 
 
 
-/* This is a fork from 2 Obsidian Themes i found on, that have the similar design, so i make it a completely easy to use for everyone elsex  */
+/* This is a fork from 2 Obsidian Themes i found on, that have the similar design, so i make it a completely easy to use for everyone else  */
 
 /* The Horizontal Line Customization  */
 body{
@@ -536,7 +524,7 @@ body{
 /* Heading Line Reader */
 
 /* The Horizontal Line Customization ====================================================================================================================== */
-/* The Horizontal Line Customization ====================================================================================================================== */
+
 .hr.cm-line hr {
   margin-block-start: 2em;
   margin-block-end: 0.8em;
@@ -583,4 +571,10 @@ body{
   text-align: -webkit-center;
   margin-block-end: 0.5em; }
 /* The Horizontal Line Customization ====================================================================================================================== */
-/* The Horizontal Line Customization ====================================================================================================================== */
+
+
+
+
+
+
+
