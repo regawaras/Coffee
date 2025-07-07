@@ -51,7 +51,7 @@ body {
 /* Will Shown when Focussed on Active Obsidian Window  */
   --titlebar-background-focused: var(--americano);
 /* Will Shown when Focussed on Other Window   */
-  --titlebar-background: var(--milk-foam);
+  --titlebar-background: var(--americano);
 /* The Upper Right Tabs (Exit, Resize, ) */
   --titlebar-text-color-focused:var(--milk-foam);
   --titlebar-text-color: var(--crema);
@@ -356,7 +356,7 @@ body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-ac
 .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight,
 .markdown-rendered mark {
     background-color: var(--crema);
-    color: var(--text-normal);
+    color: var(--americano);
     padding: 1px 3px;}
 /* Highlight ====================================== Highlight ====================================== Highlight */
 
@@ -574,4 +574,7 @@ body{
 .markdown-source-view.mod-cm6 .cm-content {
   caret-color: var(--red-robusta-beans);}
 /* cursor caret ====================================================== */
+
+
+
 
