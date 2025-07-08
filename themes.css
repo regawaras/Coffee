@@ -1,34 +1,28 @@
 /* Coffee Obsidian Themes by @regawaras */
 
 :root {
-  /* Darker */
+/* Darker */
   --americano: #0F0A00; 
-  --dark-roast: #603020;
-  --dark-beans: #201500;
-  --mocccacino: #6F3F00;
   --burnt-roast: #0F0B00;
-  
-  --red-robusta-beans: #FF3000;
-  --green-beans: #00FF00;
-
-  /* Balanced*/
-  --cappucino: #885500;
-  --balanced-brew:#998A6B; 
+  --dark-beans: #1F1500;
+  --expresso: #502000;
+  --dark-roast: #603020;
   --light-beans: #504010;
-  --hazelnut: #B0A050;
-
-  /* Yellowish*/
-  --crema: #DDAA00;
-  --caramel: #AA7500;
-  --cafe-au-lait: #CCAA55;
-  --rich-brew: #904000;
-  
+  --moccacino: #6F3F00; 
+/* Yellowish*/
   --golden-brew: #906000;
-
-  /* Lighter */
-  --milk-foam: #FFFFCC;
-  --luwak-white: #FFF0AA;
+  --cappucino: #885500;
+  --caramel: #AA7500;
+  --hazelnut: #B0A050;
+  --crema: #DDAA00;
+/* Balanced */
+  --cafe-au-lait: #CCAA55;
+  --red-robusta-beans: #FF3000;
+  --green-beans: #00FF55;
   --latte: #E0D080;
+  --milk-foam: #E0EEAA;
+  --luwak-white: #FFFFFF;
+/* Lighter */
 }
 
 body {
@@ -40,16 +34,38 @@ body {
   --font-monospace-default: "Cascadia Mono";
   --font-text-theme: "Helvatica";
   --font-size-default: 20px; 
+
+  --code-normal: var(--green-beans);
+  --code-background:var(--dark-beans) ;
+  --code-comment: #0000000;
+  --code-function: #00FFFF;
+  --code-important: #00FFFF;
+  --code-keyword: #FF00FF;
+  --code-operator: #FF00FF;
+  --code-property:  #00FF00;
+  --code-punctuation:	#FF0000;
+  --code-string:  #507080;
+  --code-tag: #FF00FF;
+  --code-value:  #FF00FF;
   
   --link-external-color: #005555;
   --link-external-color-hover: #00FFFF;
   --link-external-decoration: none;
-  --link-external-decoration-hover: underline
+  --link-external-decoration-hover: underline;
+
+  --radius-s: 0px;
+  --radius-m: 0px;
+  --radius-l: 0px;
+  --tab-radius-active: 0px;
+  --checkbox-radius: 0px;
+  --toggle-radius: 0px;
+  --toggle-thumb-radius: 0px;
+  --slider-thumb-radius: 0px;
 }
 
 .theme-dark {
 /* Will Shown when Focussed on Active Obsidian Window  */
-  --titlebar-background-focused: var(--americano);
+  --titlebar-background-focused: var(--dark-beans);
 /* Will Shown when Focussed on Other Window   */
   --titlebar-background: var(--americano);
 /* The Upper Right Tabs (Exit, Resize, ) */
@@ -57,10 +73,10 @@ body {
   --titlebar-text-color: var(--crema);
   --titlebar-icon-color: var(--milk-foam);
   
-  --background-primary: var(--dark-beans);
+  --background-primary: var(--americano);
   --background-primary-alt: var(--burnt-roast);
-  --background-secondary: var(--americano);
-  --background-secondary-alt: var(--light-beans);
+  --background-secondary: var(--dark-beans);
+  --background-secondary-alt: var(--dark-beans);
   --background-modifier-border: var(--light-beans);
   --background-modifier-form-field: var(--americano);
   --background-modifier-form-field-highlighted: var(--light-beans);
@@ -71,14 +87,14 @@ body {
   --background-modifier-cover: #00000088; /* You will know when you check Command Bar */
 
   /* Text */
-  --text-accent: var(--caramel);
+  --text-accent: var(--hazelnut);
   --text-accent-hover: var(--hazelnut);
   --text-normal: var(--milk-foam);	
   --text-muted: var(--milk-foam);	
   --text-faint: var(--hazelnut) ;	
   --text-error: var(--red-robusta-beans);	
   --text-error-hover: var(--red-robusta-beans);
-  --text-highlight-bg: var(--mocccacino);
+  --text-highlight-bg: var(--moccacino);
   --text-highlight-bg-active: var(--golden-brew);
   --text-selection:var(--red-robusta-beans);
 
@@ -119,7 +135,7 @@ body {
   --scrollbar-thumb-bg: var(--light-beans);
 
   --table-border-color: var(--light-beans);
-  --table-header-background: var(--mocccacino);
+  --table-header-background: var(--moccacino);
   --table-header-background-hover: var(--dark-beans);
   --table-header-border-color: var(--hazelnut);
   --table-header-font: #FFFFFF;
@@ -129,14 +145,14 @@ body {
   --table-row-background: var(--dark-beans);
   --table-row-background-hover: var(--light-beans);
   --table-row-alt-background #00FF00 ;
-  --table-selection: var(--mocccacino);
+  --table-selection: var(--moccacino);
   --table-selection-blend-mode: soft-light ;
   --table-selection-border-color: #FFCC00;
   --table-drag-handle-color: #000000;
   --table-drag-handle-background: #DDAA00 ;
   --table-drag-handle-background-active: #000000;
   
-  --code-normal: #FF00FF;
+  --code-normal: var(--green-beans);
   --code-comment: #0000000;
   --code-function: #00FFFF;
   --code-important: #00FFFF;
@@ -167,7 +183,7 @@ body {
   
   --prompt-border-color: var(--caramel);
 
-  --tab-background-active: var(--dark-beans);
+  --tab-background-active: var(--americano);
   --tab-text-color: var(--hazelnut);
   --tab-text-color-active: var(--hazelnut);
   --tab-text-color-focused: var(--hazelnut);
@@ -178,7 +194,7 @@ body {
   --tab-divider-color: var(--americano);
   
   --drag-ghost-background: var(--caramel);
-  --blockquote-color: var(--mocccacino);
+  --blockquote-color: var(--crema);
 
 /* for line separator LIHNE */
   --hr-line-offset: 5%;
@@ -186,7 +202,8 @@ body {
   --hr-text-color: #DDAA00;
   --hr-text-offset: 2ch;
   --hr-thickness: 7px;
-  --line-active: var(--milk-foam);}
+  --line-active: var(--milk-foam);
+}
 
 .theme-light {  
 /* Will Shown when Focussed on Active Obsidian Window  */
@@ -210,12 +227,12 @@ body {
   --background-modifier-error-hover: #FF5000;	
   --background-modifier-cover: #F0F00000;
 
-/* Text */
+  /* Text */
   --text-accent: var(--caramel);
-  --text-accent-hover: var(--mocccacino);
+  --text-accent-hover: var(--crema);
   --text-normal: var(--americano);	
-  --text-muted: var(--mocccacino);    
-  --text-faint: var(--mocccacino);	
+  --text-muted: var(--moccacino);    
+  --text-faint: var(--moccacino);	
   --text-error: var(--red-robusta-beans);	
   --text-error-hover: var(--red-robusta-beans);
   --text-highlight-color: var(--milk-foam);
@@ -223,16 +240,16 @@ body {
   --text-highlight-bg-active: var(--hazelnut);
   --text-selection:var(--red-robusta-beans);
   
-  --h1-color: var(--mocccacino);
+  --h1-color: var(--moccacino);
   --h2-color: var(--caramel);
-  --h3-color: var(--hazelnut);
-  --h4-color: var(--hazelnut);
-  --h5-color: var(--hazelnut);
-  --h6-color: var(--hazelnut);
+  --h3-color: var(--crema);
+  --h4-color: var(--crema);
+  --h5-color: var(--crema);
+  --h6-color: var(--crema);
 
   --nav-header-color: var(--dark-beans);
   --nav-item-color: var(--light-beans);
-  --nav-item-color-hover: var(--ame);
+  --nav-item-color-hover: var(--americano);
   --nav-item-color-selected: #00FF00;
   --nav-item-color-highlighted: var(--red-robusta-beans);
   
@@ -246,14 +263,17 @@ body {
   --nav-collapse-icon-color: #906000;
   --nav-collapse-icon-color-collapsed: ;
 
-  --link-color:var(--mocccacino);
-  --link-color-hover: var(--caramel);
-  --link-unresolved-color: var(--mocccacino);
-  --link-unresolved-color-hover: var(--mocccacino);
+  --link-color:var(--moccacino);
+  --link-color-hover: var(--crema);
+  --link-unresolved-color: var(--expresso);
+  --link-unresolved-opacity:;
+  --link-decoration: none;
+  --link-decoration-hover:line-through;
   --link-unresolved-filter: none;
-  --link-unresolved-opacity:100%;
-  --link-decoration: ;
-  --link-decoration-hover:line-through;  
+  --link-unresolved-opacity:80%;
+  --link-decoration: none ;
+  --link-decoration-hover: none;
+  
   
     /* BUTTONS | on todo settings, canvas side buttons */
   --text-on-accent: var(--americano);
@@ -264,7 +284,7 @@ body {
   --interactive-accent-hover: var(--red-robusta-beans);
   --interactive-success: var(--red-robusta-beans);
 
-  --tag-color: var(--mocccacino);
+  --tag-color: var(--moccacino);
   --tag-color-hover: var(--crema);
   --tag-background:;  var(--americano);
   --tag-background-hover: var(--americano);
@@ -294,7 +314,7 @@ body {
 /* Primary Tab Line Highlight ======= Primary Tab Line Hightlight ======== Primary Tab Line Highlight */
 /* inspired from : Cyber Glow Obsidian Themes | https://github.com/ArtexJay/Obsidian-CyberGlow */
 body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-active:not(:has(.mk-note-footer, .mk-floweditor-container)) {
-    background: rgba(170, 100, 0, 0.3);
+    background: rgba(170, 100, 0, 0.2);
     border-radius:  var(--radius-s);
     border-image-slice: 1;
     border-top: 1px solid;
@@ -302,7 +322,7 @@ body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-ac
     border-bottom: 1px solid; }
 /* ### Hover Line Highlight on Main Tabs ### */
 .markdown-source-view.mod-cm6 .cm-line:hover {
-    background: rgba(140, 100, 0, 0.15);
+    background: rgba(140, 100, 0, 0.1);
     border-radius:  var(--radius-s);
     border-image-slice: 1;
     border-top: 1px solid;
@@ -382,12 +402,19 @@ body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-ac
     border-left: 1x solid; }
 /*Prompt Item Style*/
 .suggestion-item {
-    color: ;
+    background: var(--background-primary);
+    color: var(--text-accent);
     border-top: 0px solid transparent;
     border-bottom: 0px solid transparent; }
+.suggestion-item.is-selected {
+    /* Gaya untuk item yang dipilih via keyboard (Up/Down) */
+    background: var(--background-secondary); /* Warna yang lebih menonjol */
+    color: var(--text-normal); /* Warna teks yang kontras */
+    border-top: 1px solid var(--background-modifier-border); /* Contoh border highlight */
+    border-bottom: 1px solid var(--background-modifier-border);}
 /*Prompt Tag Color Fixed*/
 .suggestion-item.mod-complex .suggestion-hotkey {
-    background-color: var(--mocccacino) ;
+    background-color: var(--moccacino) ;
     color: var(--hazelnut); }
 /*Prompt Input*/
 input.prompt-input {
@@ -442,9 +469,8 @@ body.is-hidden-frameless .sidebar-toggle-button.mod-left:hover {
 
 /* Upper Left Obsidian Logo Side Dock Toggle  ======================================================= */
 body {
-    --New-Obsidiantoggle: url("data:image/svg+xml,%3Csvg id='custom-logo' width='512' height='512' viewBox='0 0 512 512' fill='none' xmlns='http://www.w3.org/2000/svg' style='height:100%25;width:100%25;'%3E%3Cdefs%3E%3CradialGradient id='b' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(-48 -185 123 -32 179 429.7)'%3E%3Cstop stop-color='%23fff' stop-opacity='.4'/%3E%3Cstop offset='1' stop-opacity='.1'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(41 -310 229 30 341.6 351.3)'%3E%3Cstop stop-color='%23fff' stop-opacity='.6'/%3E%3Cstop offset='1' stop-color='%23fff' stop-opacity='.1'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(57 -261 178 39 190.5 296.3)'%3E%3Cstop stop-color='%23fff' stop-opacity='.8'/%3E%3Cstop offset='1' stop-color='%23fff' stop-opacity='.4'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(-79 -133 153 -90 321.4 464.2)'%3E%3Cstop stop-color='%23fff' stop-opacity='.3'/%3E%3Cstop offset='1' stop-opacity='.3'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(-29 136 -92 -20 300.7 149.9)'%3E%3Cstop stop-color='%23fff' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23fff' stop-opacity='.2'/%3E%3C/radialGradient%3E%3CradialGradient id='g' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(72 73 -155 153 137.8 225.2)'%3E%3Cstop stop-color='%23fff' stop-opacity='.2'/%3E%3Cstop offset='1' stop-color='%23fff' stop-opacity='.4'/%3E%3C/radialGradient%3E%3CradialGradient id='h' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(20 118 -251 43 215.1 273.7)'%3E%3Cstop stop-color='%23fff' stop-opacity='.1'/%3E%3Cstop offset='1' stop-color='%23fff' stop-opacity='.3'/%3E%3C/radialGradient%3E%3CradialGradient id='i' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(-162 -85 268 -510 374.4 371.7)'%3E%3Cstop stop-color='%23fff' stop-opacity='.2'/%3E%3Cstop offset='.5' stop-color='%23fff' stop-opacity='.2'/%3E%3Cstop offset='1' stop-color='%23fff' stop-opacity='.3'/%3E%3C/radialGradient%3E%3Cfilter id='a' x='80.1' y='37' width='351.1' height='443.2' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='6.5' result='effect1_foregroundBlur_744_9191'/%3E%3C/filter%3E%3C/defs%3E%3Crect id='logo-bg' fill='%23000000' width='512' height='512' rx='100'/%3E%3Cg filter='url(%23a)'%3E%3Cpath d='M359.2 437.5c-2.6 19-21.3 33.9-40 28.7-26.5-7.2-57.2-18.6-84.8-20.7l-42.4-3.2a28 28 0 0 1-18-8.3l-73-74.8a27.7 27.7 0 0 1-5.4-30.7s45-98.6 46.8-103.7c1.6-5.1 7.8-49.9 11.4-73.9a28 28 0 0 1 9-16.5L249 57.2a28 28 0 0 1 40.6 3.4l72.6 91.6a29.5 29.5 0 0 1 6.2 18.3c0 17.3 1.5 53 11.2 76a301.3 301.3 0 0 0 35.6 58.2 14 14 0 0 1 1 15.6c-6.3 10.7-18.9 31.3-36.6 57.6a142.2 142.2 0 0 0-20.5 59.6Z' fill='%23000' fill-opacity='.3'/%3E%3C/g%3E%3Cpath id='arrow' d='M359.9 434.3c-2.6 19.1-21.3 34-40 28.9-26.4-7.3-57-18.7-84.7-20.8l-42.3-3.2a27.9 27.9 0 0 1-18-8.4l-73-75a27.9 27.9 0 0 1-5.4-31s45.1-99 46.8-104.2c1.7-5.1 7.8-50 11.4-74.2a28 28 0 0 1 9-16.6l86.2-77.5a28 28 0 0 1 40.6 3.5l72.5 92a29.7 29.7 0 0 1 6.2 18.3c0 17.4 1.5 53.2 11.1 76.3a303 303 0 0 0 35.6 58.5 14 14 0 0 1 1.1 15.7c-6.4 10.8-18.9 31.4-36.7 57.9a143.3 143.3 0 0 0-20.4 59.8Z' fill='%23616161'/%3E%3Cpath d='M182.7 436.4c33.9-68.7 33-118 18.5-153-13.2-32.4-37.9-52.8-57.3-65.5-.4 1.9-1 3.7-1.8 5.4L96.5 324.8a27.9 27.9 0 0 0 5.5 31l72.9 75c2.3 2.3 5 4.2 7.8 5.6Z' fill='url(%23b)'/%3E%3Cpath d='M274.9 297c9.1.9 18 2.9 26.8 6.1 27.8 10.4 53.1 33.8 74 78.9 1.5-2.6 3-5.1 4.6-7.5a1222 1222 0 0 0 36.7-57.9 14 14 0 0 0-1-15.7 303 303 0 0 1-35.7-58.5c-9.6-23-11-58.9-11.1-76.3 0-6.6-2.1-13.1-6.2-18.3l-72.5-92-1.2-1.5c5.3 17.5 5 31.5 1.7 44.2-3 11.8-8.6 22.5-14.5 33.8-2 3.8-4 7.7-5.9 11.7a140 140 0 0 0-15.8 58c-1 24.2 3.9 54.5 20 95Z' fill='url(%23c)'/%3E%3Cpath d='M274.8 297c-16.1-40.5-21-70.8-20-95 1-24 8-42 15.8-58l6-11.7c5.8-11.3 11.3-22 14.4-33.8a78.5 78.5 0 0 0-1.7-44.2 28 28 0 0 0-39.4-2l-86.2 77.5a28 28 0 0 0-9 16.6L144.2 216c0 .7-.2 1.3-.3 2 19.4 12.6 44 33 57.3 65.3 2.6 6.4 4.8 13.1 6.4 20.4a200 200 0 0 1 67.2-6.8Z' fill='url(%23d)'/%3E%3Cpath d='M320 463.2c18.6 5.1 37.3-9.8 39.9-29a153 153 0 0 1 15.9-52.2c-21-45.1-46.3-68.5-74-78.9-29.5-11-61.6-7.3-94.2.6 7.3 33.1 3 76.4-24.8 132.7 3.1 1.6 6.6 2.5 10.1 2.8l43.9 3.3c23.8 1.7 59.3 14 83.2 20.7Z' fill='url(%23e)'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M255 200.5c-1.1 24 1.9 51.4 18 91.8l-5-.5c-14.5-42.1-17.7-63.7-16.6-88 1-24.3 8.9-43 16.7-59 2-4 6.6-11.5 8.6-15.3 5.8-11.3 9.7-17.2 13-27.5 4.8-14.4 3.8-21.2 3.2-28 3.7 24.5-10.4 45.8-21 67.5a145 145 0 0 0-17 59Z' fill='url(%23f)'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M206 285.1c2 4.4 3.7 8 4.9 13.5l-4.3 1c-1.7-6.4-3-11-5.5-16.5-14.6-34.3-38-52-57-65 23 12.4 46.7 31.9 61.9 67Z' fill='url(%23g)'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M211.1 303c8 37.5-1 85.2-27.5 131.6 22.2-46 33-90.1 24-131l3.5-.7Z' fill='url(%23h)'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M302.7 299.5c43.5 16.3 60.3 52 72.8 81.9-15.5-31.2-37-65.7-74.4-78.5-28.4-9.8-52.4-8.6-93.5.7l-.9-4c43.6-10 66.4-11.2 96 0Z' fill='url(%23i)'/%3E%3C/svg%3E");}
+    --New-Obsidiantoggle: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='18' height='18' fill='none' stroke='currentColor' stroke-width='32' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E");}
 /* Upper Left Obsidian Logo Side Dock Toggle  ======================================================= */
-
 
 /* This is a fork from 2 Obsidian Themes i found on, that have the similar design, so i make it a completely easy to use for everyone else  */
 
@@ -575,6 +601,16 @@ body{
   caret-color: var(--red-robusta-beans);}
 /* cursor caret ====================================================== */
 
-
-
-
+ /* CALLOUT ================================================================================= */
+.callout {
+  border-width: 1px;
+  border-color: var(--crema);
+  background-color: var(--americano);
+  border-radius: 15px;
+  border-style: dotted;}
+.callout-title {
+  color: var(--crema);
+  font-size: 12.9px;}
+.callout > .callout-content p:last-child {
+   margin-bottom: 0;}
+ /* CALLOUT ================================================================================= */
