@@ -21,7 +21,7 @@
   --green-beans: #00FF55;
   --latte: #E0D080;
   --milk-foam: #E0EEAA;
-  --luwak-white: #FFFFFF;
+  --white-luwak: #FFFFFF;
 /* Lighter */
 }
 
@@ -32,22 +32,9 @@ body {
   
   --font-default: "Arial Black";
   --font-monospace-default: "Cascadia Mono";
-  --font-text-theme: "Helvatica";
+  --font-text-theme: ;
   --font-size-default: 20px; 
 
-  --code-normal: var(--green-beans);
-  --code-background:var(--dark-beans) ;
-  --code-comment: #0000000;
-  --code-function: #00FFFF;
-  --code-important: #00FFFF;
-  --code-keyword: #FF00FF;
-  --code-operator: #FF00FF;
-  --code-property:  #00FF00;
-  --code-punctuation:	#FF0000;
-  --code-string:  #507080;
-  --code-tag: #FF00FF;
-  --code-value:  #FF00FF;
-  
   --link-external-color: #005555;
   --link-external-color-hover: #00FFFF;
   --link-external-decoration: none;
@@ -87,7 +74,7 @@ body {
   --background-modifier-cover: #00000088; /* You will know when you check Command Bar */
 
   /* Text */
-  --text-accent: var(--hazelnut);
+  --text-accent: var(--moccacino);
   --text-accent-hover: var(--hazelnut);
   --text-normal: var(--milk-foam);	
   --text-muted: var(--milk-foam);	
@@ -150,19 +137,11 @@ body {
   --table-selection-border-color: #FFCC00;
   --table-drag-handle-color: #000000;
   --table-drag-handle-background: #DDAA00 ;
-  --table-drag-handle-background-active: #000000;
+  --table-drag-handle-background-active: #00000000;
   
   --code-normal: var(--green-beans);
-  --code-comment: #0000000;
-  --code-function: #00FFFF;
-  --code-important: #00FFFF;
-  --code-keyword: #FF00FF;
-  --code-operator: #FF00FF;
-  --code-property:  #00FF00;
-  --code-punctuation:	#FF0000;
-  --code-string:  #507080;
-  --code-tag: #FF00FF;
-  --code-value:  #FF00FF;
+  --code-background:var(--dark-beans) ;
+  
 
   --icon-opacity: 100%;
   --icon-color:  var(--hazelnut);
@@ -207,16 +186,16 @@ body {
 
 .theme-light {  
 /* Will Shown when Focussed on Active Obsidian Window  */
-  --titlebar-background-focused: var(--luwak-white);
+  --titlebar-background-focused: var(--white-luwak);
 /* Will Shown when Focussed on Other Window   */
-  --titlebar-background: var(--latte);
+  --titlebar-background: var(--milk-foam);
 /* Obsidian Window Frame  The Upper Right Tabs (Exit, Resize, ) */
   --titlebar-text-color-focused:var(--americano);
   --titlebar-text-color: var(--americano);  
 
   --background-primary: var(--milk-foam); 
   --background-primary-alt: var(--latte);
-  --background-secondary: var(--luwak-white); 
+  --background-secondary: var(--white-luwak); 
   --background-secondary-alt: var(--hazelnut);
   --background-modifier-border: var(--latte);
   --background-modifier-form-field: var(latte);
@@ -228,7 +207,7 @@ body {
   --background-modifier-cover: #F0F00000;
 
   /* Text */
-  --text-accent: var(--caramel);
+  --text-accent: var(--cappucino);
   --text-accent-hover: var(--crema);
   --text-normal: var(--americano);	
   --text-muted: var(--moccacino);    
@@ -238,7 +217,7 @@ body {
   --text-highlight-color: var(--milk-foam);
   --text-highlight-bg: var(--milk-foam);
   --text-highlight-bg-active: var(--hazelnut);
-  --text-selection:var(--red-robusta-beans);
+  --text-selection:var(--hazelnut);
   
   --h1-color: var(--moccacino);
   --h2-color: var(--caramel);
@@ -246,6 +225,9 @@ body {
   --h4-color: var(--crema);
   --h5-color: var(--crema);
   --h6-color: var(--crema);
+
+  --code-normal: var(--americano);
+  --code-background:var(--latte) ;  
 
   --nav-header-color: var(--dark-beans);
   --nav-item-color: var(--light-beans);
@@ -273,7 +255,11 @@ body {
   --link-unresolved-opacity:80%;
   --link-decoration: none ;
   --link-decoration-hover: none;
-  
+
+  /* Scrollbar */
+  --scrollbar-active-thumb-bg: var(--caramel);	
+  --scrollbar-bg: var(--crema);
+  --scrollbar-thumb-bg: var(--hazelnut);
   
     /* BUTTONS | on todo settings, canvas side buttons */
   --text-on-accent: var(--americano);
@@ -435,20 +421,20 @@ body.is-tablet .sidebar-toggle-button.mod-left>.clickable-icon {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    border-radius: 8px;
-    background-color: var(--text-accent);
+    border-radius: 15px;
+    background-color: var(--hazelnut);
     background-blend-mode: luminosity;
-    padding: 0px 0px 18px 18px;
+    padding: 8px 1px 9px 9px;
     background-image: var(--New-Obsidiantoggle); }
 /*Custom Styled L-Sidebar Toggle*/
 /*Hover Highlight for Custom Toggle*/
 body.is-hidden-frameless .sidebar-toggle-button.mod-left:hover {
-    background: var(--dark-beans);
-    border-radius: 5px;
+    background: var(--crema);
+    border-radius: 10px;
     border-image-slice: 1;
     border-image-source: linear-gradient(to top, transparent, var(--text-accent), transparent);
-    border-left: 2px solid;
-    border-right: 2px solid; }
+    border-left: 0px solid;
+    border-right: 0px solid; }
 /*Hover Highlight for Custom Toggle*/
 /*Centers and adds Styles for Tab Headers*/
 .mod-left-split .workspace-tab-header-container-inner,
@@ -469,7 +455,7 @@ body.is-hidden-frameless .sidebar-toggle-button.mod-left:hover {
 
 /* Upper Left Obsidian Logo Side Dock Toggle  ======================================================= */
 body {
-    --New-Obsidiantoggle: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='18' height='18' fill='none' stroke='currentColor' stroke-width='32' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E");}
+    --New-Obsidiantoggle: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='18' height='18' fill='none' stroke='currentColor' stroke-width='30' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E");}
 /* Upper Left Obsidian Logo Side Dock Toggle  ======================================================= */
 
 /* This is a fork from 2 Obsidian Themes i found on, that have the similar design, so i make it a completely easy to use for everyone else  */
