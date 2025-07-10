@@ -27,7 +27,6 @@
 /* Lighter */
 }
 
-
 body {
   --accent-h: 35;
   --accent-s: 50%;
@@ -210,7 +209,7 @@ body {
   
   /* Text */
   --text-accent: var(--cappucino);
-  --text-accent-hover: var(--crema);
+  --text-accent-hover: var(--caramel);
   --text-normal: var(--americano);	
   --text-muted: var(--moccacino);    
   --text-faint: var(--moccacino);	
@@ -305,7 +304,8 @@ body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-ac
     border-image-slice: 1;
     border-top: 3px solid;
     border-image-source: linear-gradient(to right, transparent, var(--background-modifier-border), transparent);
-    border-bottom: 3px solid; }
+    border-bottom: 3px solid; 
+}
 /* ### Hover Line Highlight on Main Tabs ### */
 .markdown-source-view.mod-cm6 .cm-line:hover {
     background: var(--background-secondary);
@@ -314,16 +314,26 @@ body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-ac
     border-top: 1px solid;
     border-image-source: linear-gradient(to right, transparent, var(--background-modifier-border), transparent);
     border-bottom: 1px solid;
-    opacity: 1; }
+    opacity: 1; 
+}
 /* Primary Tab Line Highlight ======= Primary Tab Line Hightlight ======== Primary Tab Line Highlight */
 
 /** =================* File Explorer Upper border ================= **/
+/* Custom Font for File Explorer */
+.nav-file-title,
+.nav-folder-title,
+.nav-header {
+  font-family: "Arial Black", sans-serif;
+  font-size: 12px; 
+  font-weight: bold;
+  color: var(--text-accent);
+}
 .nav-header {
     border-image-slice: 1;
     border-top: 1px solid;
     border-image-source: linear-gradient(to right, transparent, var(--crema), transparent);
-    border-bottom: 1px solid; }
-
+    border-bottom: 1px solid; 
+}
 /** ### Nav Line Highlight File Active Stying ### **/
 .nav-file-title.is-active {
     background: var(--background-primary);
@@ -332,18 +342,9 @@ body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-ac
     border-image-slice: 1;
     border-top: 0px solid;
     border-image-source: linear-gradient(to right, transparent, var(--crema), transparent);
-    border-bottom: 0px solid; }
+    border-bottom: 0px solid; 
+}
 /** ### Nav Line Highlight File Active Stying ### **/
-
-
-/*Styles Hover for Search Items */
-.tree-item-self.is-clickable:hover,.suggestion-item.is-selected:not(.mod-group):hover {
-    background: var(--background-seconds-alt);
-    color: var(--light-beans);
-    border-image-slice: 1;
-    border-top: 1px solid;
-    border-image-source: linear-gradient(to right, transparent, var(--crema), transparent);
-    border-bottom: 1px solid; }
 
 /*============ File Explorer Navigation =================*/
 .nav-file-title.is-dragging {
@@ -358,72 +359,24 @@ body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-ac
 /* File Explorer Icon ==================== File Explorer Icon ==================== File Explorer Icon */
 
 
+/*Styles Hover for Search Items */
+.tree-item-self.is-clickable:hover,.suggestion-item.is-selected:not(.mod-group):hover {
+    background: var(--background-seconds-alt);
+    color: var(--light-beans);
+    border-image-slice: 1;
+    border-top: 1px solid;
+    border-image-source: linear-gradient(to right, transparent, var(--crema), transparent);
+    border-bottom: 1px solid; 
+}
+
 /* Highlight ====================================== Highlight ====================================== Highlight */
 .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight,
 .markdown-rendered mark {
     background-color: var(--crema);
     color: var(--americano);
-    padding: 1px 3px;}
+    padding: 1px 3px;
+}
 /* Highlight ====================================== Highlight ====================================== Highlight */
-
-/* Fonts ====================================== Fonts ====================================== Fonts 
-.markdown-source-view {
-  font-family: monospace;}  
-.markdown-source-view.mod-cm6 .cm-scroller {
-  font-family: Helvetica;} 
-.markdown-preview-view,
-.cm-scroller {
-  font-family: Helvetica;} /* For reading view */
-/* PDF Print JS  ============================ PDF Print JS ============================ PDF Print JS  */
-/* reading mode */
-.markdown-preview-view p {
-  text-align: justify;
-  text-justify: inter-word;}
-/* source view and live preview */
-.markdown-source-view.mod-cm6 .cm-line {
-text-align: justify;
-text-justify: inter-word;}
-.markdown-preview-view {2
-  font-family: "Times New Roman", Times, serif;}
-/* For edit view (legacy editor and live preview) */
-.markdown-source-view,
-.cm-content {
-  font-family: "Times New Roman", Times, serif;}
-/* ================================*/
-@import "pdf-print.js";
-@media print {
-  @page {
-    margin-top: 1.1in;
-    margin-bottom: 1.3in;}
-code {
-    tab-size: 4;
-    text-align: justify;
-    text-justify: inter-word;
-    text-indent: 2em;
-    line-height: 2;
-    margin: 0px 55px;
-    padding-bottom: 0.5em; /* Adjust the value as needed */
-    margin-bottom: 0.5em; /* Adjust the value as needed */  }
-p {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 12px;
-    text-align: justify;
-    text-justify: inter-word;
-    text-indent: 2em;
-    line-height: 2;
-    margin: 0px 55px;
-    padding-bottom: 0.5em; /* Adjust the value as needed */
-    margin-bottom: 0.5em; /* Adjust the value as needed */  }
-  :is(h1, h2, h3, h4, h5, h6) {
-    font-family: "Times New Roman", Times, serif; 
-    color: var(--crema);
-    text-align: center;}
-  h1 {
-    font-size: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    page-break-before: always;}}
-/* PDF Print JS  ============================ PDF Print JS ============================ PDF Print JS  */
 
 
 /* Fonts ====================================== Fonts ====================================== Fonts */
@@ -437,29 +390,34 @@ p {
     border-image-slice: 0;
     border-image-source: linear-gradient(to top, transparent, var(--light-beans) , transparent);
     border-right: 1px solid;
-    border-left: 1x solid; }
+    border-left: 1x solid;
+}
 /*Prompt Item Style*/
 .suggestion-item {
     background: var(--background-primary);
     color: var(--text-accent);
     border-top: 0px solid transparent;
-    border-bottom: 0px solid transparent; }
+    border-bottom: 0px solid transparent;
+}
 .suggestion-item.is-selected {
     /* Gaya untuk item yang dipilih via keyboard (Up/Down) */
     background: var(--background-secondary); /* Warna yang lebih menonjol */
     color: var(--text-normal); /* Warna teks yang kontras */
     border-top: 1px solid var(--background-modifier-border); /* Contoh border highlight */
-    border-bottom: 1px solid var(--background-modifier-border);}
+    border-bottom: 1px solid var(--background-modifier-border);
+}
 /*Prompt Tag Color Fixed*/
 .suggestion-item.mod-complex .suggestion-hotkey {
     background-color: var(--moccacino) ;
-    color: var(--hazelnut); }
+    color: var(--hazelnut); 
+}
 /*Prompt Input*/
 input.prompt-input {
     border-radius: 5px;
     margin: 5px;
     background: var(--background-settings-2);x
-    padding: 15px; }
+    padding: 15px; 
+}
 /* Prompt ====================================== prompt ====================================== propmt */
 /* Prompt ====================================== prompt ====================================== propmt */
 
@@ -477,7 +435,8 @@ body.is-tablet .sidebar-toggle-button.mod-left>.clickable-icon {
     background-color: var(--hazelnut);
     background-blend-mode: luminosity;
     padding: 8px 1px 9px 9px;
-    background-image: var(--New-Obsidiantoggle); }
+    background-image: var(--New-Obsidiantoggle); 
+}
 /*Custom Styled L-Sidebar Toggle*/
 /*Hover Highlight for Custom Toggle*/
 body.is-hidden-frameless .sidebar-toggle-button.mod-left:hover {
@@ -495,14 +454,16 @@ body.is-hidden-frameless .sidebar-toggle-button.mod-left:hover {
     justify-content: center;
     border-image-slice: 1;
     border-image-source: linear-gradient(to right, transparent, var(--golden-brew), transparent);
-    border-bottom: 0px solid; }
+    border-bottom: 0px solid; 
+}
 /*Corrects Position of Custom Sidebar toggle*/
 .workspace-ribbon .sidebar-toggle-button {
     margin: 0px 0px 0px 0px; }
 /*Displays Full Custom Toggle*/
 .sidebar-toggle-button {
     align-items: center;
-    padding: 0 0 0 0; }
+    padding: 0 0 0 0; 
+}
 /* =============== Side Dock Toggle Obsidian Logo ================*/
 
 /* Upper Left Obsidian Logo Side Dock Toggle  ======================================================= */
@@ -532,7 +493,8 @@ li:not(.is-collapsed) .list-bullet:after, .cm-formatting-list .list-bullet:after
     background: transparent;
     font-weight: bold;
     transform: translate(7px, 5px) rotate(90deg);
-    text-shadow: 0 0 0px var(--text-accent), 0 0 0px var(--list-marker-color), 0 0 0px var(--text-accent), 0 0 0px var(--text-accent); }
+    text-shadow: 0 0 0px var(--text-accent), 0 0 0px var(--list-marker-color), 0 0 0px var(--text-accent), 0 0 0px var(--text-accent); 
+}
 /*Realigns Custom bullet point*/
 .list-bullet {
     align-items: baseline;
@@ -548,13 +510,14 @@ li.is-collapsed .list-bullet:after, .is-collapsed~.cm-formatting-list .list-bull
     box-shadow: none;
     transform: translate(-10px, 0px) rotate(360deg);
     margin-left: -0.4em; 
-    opacity: 1; }
+    opacity: 1; 
+}
 /*Removes hover dot */
 .cm-fold-indicator:hover~.cm-formatting-list .list-bullet:after,
 .cm-fold-indicator:hover.is-collapsed~.cm-formatting-list .list-bullet:after {
     background-color: transparent;
-    box-shadow: none; }
-    opacity: 0; 
+    box-shadow: none; 
+}
 /* Lists ======================================== Lists ======================================== List */
 
 /* Number list =============================== Number list ============================== Number list */
@@ -564,17 +527,20 @@ ol>li::marker, ul>li::marker, .cm-s-obsidian .cm-formatting-list {
     font-weight: bold;
     border-image-source: linear-gradient(to right, var(--text-accent), transparent);
     text-shadow: 0 0 5px var(--text-accent), 0 0 0px var(--text-accent),
-        0 0 0px var(--text-accent), 0 0 0px var(--text-accent); }
+        0 0 0px var(--text-accent), 0 0 0px var(--text-accent); 
+}
 /*Adds style to the Identation guide */
 .markdown-rendered.show-indentation-guide li>ul::before, .markdown-rendered.show-indentation-guide li>ol::before,
 .markdown-source-view.mod-cm6 .cm-indent::before {
     background:  var(--text-accent);
     box-shadow: 0 0 0px var(--text-accent), 0 0 0px var(--text-accent),
         0 0 0px var(--text-accent), 0 0 0px var(--text-accent);
-    width: 0px; }
+    width: 0px; 
+}
 /*Aligns Number List with identation guide*/
 .markdown-rendered ol {
-    margin-left: 10px; }
+    margin-left: 10px; 
+}
 /* Number list =============================== Number list ============================== Number list */
 
 /*============ Graph ================= */
@@ -595,8 +561,6 @@ ol>li::marker, ul>li::marker, .cm-s-obsidian .cm-formatting-list {
 .graph-view.color-fill-attachment {
     color: #FFCC80; }
 
-/* This is a fork from 2 Obsidian Themes i found on, that have the similar design, so i make it a completely easy to use for everyone else  */
-
 /* The Horizontal Line Customization  */
 body{
 --newoutlined-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='18' height='18' fill='none' stroke='currentColor' stroke-width='32' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E");
@@ -608,7 +572,7 @@ body{
 --win-minimize: url("data:image/svg+xml,%3Csvg fill='none' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23212121'%3E%3Cpath d='m5.08496 4c.20592-.5826.76154-1 1.41465-1h3.5c1.65689 0 2.99999 1.34315 2.99999 3v3.5c0 .6531-.4174 1.2087-1 1.4146v-4.9146c0-1.10457-.8954-2-1.99999-2z'/%3E%3Cpath d='m4.5 5h5c.8284 0 1.5.67157 1.5 1.5v5c0 .8284-.6716 1.5-1.5 1.5h-5c-.82843 0-1.5-.6716-1.5-1.5v-5c0-.82843.67157-1.5 1.5-1.5zm0 1c-.27614 0-.5.22386-.5.5v5c0 .2761.22386.5.5.5h5c.27614 0 .5-.2239.5-.5v-5c0-.27614-.22386-.5-.5-.5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-/* The Horizontal Line Customization ====================================================================================================================== */
+/* The Horizontal Line Customization ============================================================================================= */
 .hr.cm-line hr {
   margin-block-start: 2em;
   margin-block-end: 0.8em;
@@ -616,7 +580,8 @@ body{
   border-image-slice: 1;
   border-width: 1px;
   text-align: -webkit-center;
-  border-image: linear-gradient(to left, transparent, var(--text-accent) 45%, transparent 45%, transparent 55%, var(--text-accent) 5%, transparent) 3; }
+  border-image: linear-gradient(to left, transparent, var(--text-accent) 45%, transparent 45%, transparent 55%, var(--text-accent) 5%, transparent) 3; 
+}
 /* Logo for Heading Line*/
 .markdown-preview-view hr::after {
   content: ' ';
@@ -627,7 +592,8 @@ body{
   background-color: var(--text-accent);
   position: absolute;
   transform: translate(-45%, -50%);
-  padding: 1rem; }
+  padding: 1rem; 
+}
 /* The Logo Icon Source on Editing Mode  */
 .hr.cm-line hr::after {
   content: ' ';
@@ -648,13 +614,15 @@ body{
   border-image-slice: 1;
   border-image: linear-gradient(to left, transparent, var(--text-accent) 45%, transparent 45%, transparent 55%, var(--text-accent) 5%, transparent) 3;
   text-align: -webkit-center;
-  margin-block-end: 0.5em; }
+  margin-block-end: 0.5em; 
+}
 /* The Horizontal Line Customization ====================================================================================================================== */
 
 /* cursor caret ====================================================== */
 /* Inspired from: https://github.com/Jopp-gh/Obsidian-Dune84 */
 .markdown-source-view.mod-cm6 .cm-content {
-  caret-color: var(--red-robusta-beans);}
+  caret-color: var(--red-robusta-beans);
+}
 /* cursor caret ====================================================== */
 
  /* CALLOUT ================================================================================= */
@@ -663,10 +631,101 @@ body{
   border-color: var(--crema);
   background-color: var(--background-secondary);
   border-radius: 15px;
-  border-style: dotted;}
+  border-style: dotted;
+}
 .callout-title {
   color: var(--text-faint);
-  font-size: 12.9px;}
+  font-size: 12.9px;
+}
 .callout > .callout-content p:last-child {
-   margin-bottom: 0;}
+   margin-bottom: 0;
+}
  /* CALLOUT ================================================================================= */
+
+
+/* Fonts ====================================== Fonts ====================================== Fonts 
+.markdown-source-view {
+  font-family: monospace;}  
+.markdown-source-view.mod-cm6 .cm-scroller {
+  font-family: Helvetica;} 
+.markdown-preview-view,
+.cm-scroller {
+  font-family: Helvetica;} /* For reading view */
+
+
+.markdown-preview-view p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+/* source view and live preview */
+.markdown-source-view.mod-cm6 .cm-line {
+text-align: justify;
+text-justify: inter-word;
+}
+.markdown-preview-view {2
+  font-family: "Times New Roman", Times, serif;}
+/* For edit view (legacy editor and live preview) */
+.markdown-source-view,
+.cm-content {
+  font-family: "Times New Roman", Times, serif;}
+.markdown-preview-view ul li,
+.markdown-preview-view ol li {
+  text-align: justify;
+  text-justify: inter-word;
+}
+/* ================================*/
+
+/* PDF Print JS  =========================== PDF Print JS =========================== PDF Print JS  */
+@import "pdf-print.js"; /* Pastikan ini ada di bagian awal, sebelum aturan lain dalam @media print */
+@media print {
+  @page {
+    margin-top: 1.1in;
+    margin-bottom: 1.3in;
+  }
+  ul li,
+  ol li {
+    text-align: justify;
+    text-justify: inter-word;
+    /* Menyesuaikan margin dan indentasi agar konsisten dengan paragraf */
+    margin: 0px 0px; /* Margin kiri-kanan yang sama dengan paragraf */
+    text-indent: 0em; /* Indentasi baris pertama yang sama dengan paragraf */
+    line-height: 1; /* Tinggi baris yang sama dengan paragraf */
+    font-size: 12px;
+  }
+  code {
+    tab-size: 4;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 2em;
+    line-height: 2;
+    margin: 0px 55px;
+    padding-bottom: 0.5em; /* Sesuaikan nilai jika diperlukan */
+    margin-bottom: 0.5em; /* Sesuaikan nilai jika diperlukan */
+  }
+  p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 13px;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 2em;
+    line-height: 2;
+    margin: 0px 55px;
+    padding-bottom: 0.5em; /* Sesuaikan nilai jika diperlukan */
+    margin-bottom: 0.5em; /* Sesuaikan nilai jika diperlukan */
+  }
+  :is(h2, h3, h4, h5, h6) {
+    font-family: "Times New Roman", Times, serif;
+    color: var(--moccacino); /* Menggunakan variabel warna tema Anda */
+    text-align: left;
+  }
+  h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    page-break-before: always;
+  }
+}
+/* PDF Print JS  ============================ PDF Print JS ============================ PDF Print JS  */
+
+
