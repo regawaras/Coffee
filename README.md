@@ -1,51 +1,41 @@
-Coffee Obsidian Theme
-By regawaras
+# Coffee Obsidian Theme By @regawaras
 
-Overview
+## Overview
 The "Coffee" theme for Obsidian offers a rich visual experience, bringing the duality of coffee flavors through its dark (Dark Coffee) and light (Light Coffee) modes. This theme is designed to provide an ergonomic, soothing, and warm feel to your eyes, creating a comfortable working environment.
 
-Key Features
-Two Modes, One Aesthetic: Enjoy a coffee-inspired color palette, optimized for both dark and light modes. The light mode is specifically crafted for visual comfort with warm undertones.
+## Screenshots
+Here are some screenshots of the theme.
 
-Coffee-Based Color Customization: Utilizes CSS variables named after coffee terms (e.g., --americano, --crema, --hazelnut) for consistency and ease of customization.
+<img src="ss-showcase-1.png" alt="Mix Showcase Theme 1" width="700"/>
+<img src="ss-showcase-2.png" alt="Mix Showcase Theme 2" width="700"/>
 
-Personalized UI Elements: Deep customization for title bars, backgrounds, text, links, tags, scrollbars, and tables to align with the coffee theme.
+## Dark Themed Coffee 
+<img width="1366" height="768" alt="coffee-dark-theme" src="https://github.com/user-attachments/assets/2de76b8d-eedb-45e0-b2e6-ae4e40c10656" />
 
-Intelligent Highlighting: Features active line and hover line highlighting in the source view for easier navigation.
+## Light Themed Coffee
+<img width="1366" height="768" alt="coffee-light-theme" src="https://github.com/user-attachments/assets/abd6e207-45ef-48a5-914b-35b8185e5384" />
 
-Unique File Explorer Icons: Custom folder (📂) and file (📝) icons in the Obsidian file explorer.
+## Key Features
+1. coffee-inspired color palette, optimized for both dark & light modes. The light mode specifically crafted for visual comfort with warm undertones. Utilizes CSS variables named after coffee terms (e.g., --americano, --moccacino, --latte, --caramel, --hazelnut) for consistency and ease of customization.
 
-Enhanced Text Styling: Custom styles for text highlights, cursor caret, and callout blocks.
+2. Intelligent Highlighting: Features active line and hover line highlighting in the source view for easier navigation. 
 
-Professional Print Settings: Includes specific styles for PDF printing, ensuring documents look polished with "Times New Roman" font and justified text.
+3. Professional Print Settings: Includes specific styles for PDF printing, ensuring documents look polished with "Times New Roman" font and justified text. 
 
-Dynamic List Display: Adjustments for both bullet points and numbered lists, with animations for collapsed and uncollapsed items.
+4. Dynamic List Display: Adjustments for both bullet points and numbered lists, with animations for collapsed and uncollapsed items. 
 
-Themed Horizontal Lines: Unique horizontal rules with an embedded Obsidian logo, adding a personal touch to your notes.
+5. Obsidian Icon on Horizontal separator line & side dock / side bar.
 
-Screenshots
-Here are some screenshots of the theme in action. (Please insert your images here)
+6. Simple & Easy customizable File Explorer Icons with emoji: folder (📂) and file (📝) icons in the Obsidian file explorer. 
 
-<!-- Example (Dark Themed Coffee) -->
+7. Enhanced Text Styling: Custom styles for text highlights, cursor caret, and callout blocks. 
 
-<!-- <img src="path/to/your/dark-theme-screenshot.png" alt="Dark Coffee Theme" width="700"/> -->
 
-<!-- Example (Light Themed Coffee) -->
 
-<!-- <img src="path/to/your/light-theme-screenshot.png" alt="Light Coffee Theme" width="700"/> -->
-
-Installation
-Open Obsidian.
-
-Go to Settings (gear icon in the bottom left).
-
-Select Appearance from the sidebar.
-
-In the Themes section, click the Manage button next to "Community themes".
-
-Search for "Coffee" in the search bar.
-
-Click Use to apply the theme.
-
-Credits
-This theme is a fork and is inspired by two other Obsidian Themes with similar designs. My goal was to make this theme completely easy to use and accessible for everyone. Many thanks to the original theme developers for their inspiration
+## Installation
+1. Open Obsidian.
+2. Go to Settings (gear icon in the bottom left).
+3. Select Appearance from the sidebar.
+4. In the Themes section, click the Manage button next to "Community themes".
+5. Search for "Coffee" in the search bar.
+6. Click Use to apply the theme.
