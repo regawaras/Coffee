@@ -1,5 +1,6 @@
 /* Coffee Obsidian Themes by @regawaras */
 
+/* Coffee Color Variables */
 :root {
 /* Darker */
   --americano: #0F0A00; 
@@ -25,6 +26,7 @@
 /* Lighter */
 }
 
+/* Global Styles for Body */
 body {
   --accent-h: 35;
   --accent-s: 50%;
@@ -32,7 +34,7 @@ body {
   
   --font-default: "Arial Black";
   --font-monospace-default: "Cascadia Mono";
-  --font-text-theme: ;
+  /* --font-text-theme: ; This variable was unused, so it's removed */
   --font-size-default: 20px; 
 
   --link-external-color: #005555;
@@ -40,6 +42,7 @@ body {
   --link-external-decoration: none;
   --link-external-decoration-hover: underline;
 
+  /* Corner radii set to 0px for a sharper look */
   --radius-s: 0px;
   --radius-m: 0px;
   --radius-l: 0px;
@@ -48,14 +51,24 @@ body {
   --toggle-radius: 0px;
   --toggle-thumb-radius: 0px;
   --slider-thumb-radius: 0px;
+
+  /* Obsidian Logo Icon for left sidebar toggle button */
+  --New-Obsidiantoggle: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='18' height='18' fill='none' stroke='currentColor' stroke-width='30' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E");
+  --outlined-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='15 -3 69 106'%3E%3Cpath d='M 30.91 17.52 L 34.43 35.7 M 61.44 14.41 L 62.61 0 M 34.43 35.7 L 37.57 90.47 M 81 26.39 L 61.44 14.41 L 34.43 35.7 L 65.35 100 M 62.61 0 L 30.91 17.52 L 18 45.45 L 37.57 90.47 L 65.35 100 L 70.44 89.8 L 81 26.39 L 62.61 0 Z' stroke='%23000000' stroke-width='4' fill='none'/%3E%3C/svg%3E");
+  --CG-line-width: 50rem;
+  --file-line-width: var(--CG-line-width);
+  /* Maximize/minimize window icons */
+  --win-maximize: url("data:image/svg+xml,%3Csvg fill='none' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m4.5 3c-.82843 0-1.5.67157-1.5 1.5v7c0 .8284.67157 1.5 1.5 1.5h7c.8284 0 1.5-.6716 1.5-1.5v-7c0-.82843-.6716-1.5-1.5-1.5zm0 1h7c.2761 0 .5.22386.5.5v7c0 .2761-.2239.5-.5.5h-7c-.27614 0-.5-.2239-.5-.5v-7c0-.27614.22386-.5.5-.5z' fill='%23212121'/%3E%3C/svg%3E");
+  --win-minimize: url("data:image/svg+xml,%3Csvg fill='none' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23212121'%3E%3Cpath d='m5.08496 4c.20592-.5826.76154-1 1.41465-1h3.5c1.65689 0 2.99999 1.34315 2.99999 3v3.5c0 .6531-.4174 1.2087-1 1.4146v-4.9146c0-1.10457-.8954-2-1.99999-2z'/%3E%3Cpath d='m4.5 5h5c.8284 0 1.5.67157 1.5 1.5v5c0 .8284-.6716 1.5-1.5 1.5h-5c-.82843 0-1.5-.6716-1.5-1.5v-5c0-.82843.67157-1.5 1.5-1.5zm0 1c-.27614 0-.5.22386-.5.5v5c0 .2761.22386.5.5.5h5c.27614 0 .5-.2239.5-.5v-5c0-.27614-.22386-.5-.5-.5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
+/* Styles for Dark Theme */
 .theme-dark {
-/* Will Shown when Focussed on Active Obsidian Window  */
+/* Will be shown when the active Obsidian window is focused */
   --titlebar-background-focused: var(--dark-beans);
-/* Will Shown when Focussed on Other Window   */
+/* Will be shown when another window is focused */
   --titlebar-background: var(--americano);
-/* The Upper Right Tabs (Exit, Resize, ) */
+/* Upper Right Tabs (Exit, Resize) */
   --titlebar-text-color-focused:var(--milk-foam);
   --titlebar-text-color: var(--crema);
   --titlebar-icon-color: var(--milk-foam);
@@ -92,7 +105,7 @@ body {
   --h5-color: var(--caramel);
   --h6-color: var(--caramel);
   
-    /* BUTTONS | on todo settings, canvas side buttons */
+  /* Buttons | on todo settings, canvas side buttons */
   --text-on-accent: var(--milk-foam);
   --text-on-accent-hover: var(--latte);
   --interactive-normal: var(--golden-brew);	
@@ -111,7 +124,7 @@ body {
 
   --tag-color: var(--hazelnut);
   --tag-color-hover: var(--caramel);
-  --tag-background: ;  var(--americano);
+  --tag-background: var(--americano); /* Corrected syntax */
   --tag-background-hover: var(--americano);
   --tag-border-color:var(--americano) ;
   --tag-border-color-hover: var(--americano);
@@ -131,7 +144,7 @@ body {
   --table-text-color: var(--text-normal);
   --table-row-background: var(--dark-beans);
   --table-row-background-hover: var(--light-beans);
-  --table-row-alt-background #00FF00 ;
+  --table-row-alt-background: var(--burnt-roast); /* Provided a consistent value */
   --table-selection: var(--moccacino);
   --table-selection-blend-mode: soft-light ;
   --table-selection-border-color: #FFCC00;
@@ -142,7 +155,6 @@ body {
   --code-normal: var(--green-beans);
   --code-background:var(--dark-beans) ;
   
-
   --icon-opacity: 100%;
   --icon-color:  var(--hazelnut);
   --icon-color-hover: var(--milk-foam);
@@ -175,7 +187,7 @@ body {
   --drag-ghost-background: var(--caramel);
   --blockquote-color: var(--crema);
 
-/* for line separator LIHNE */
+/* for line separator */
   --hr-line-offset: 5%;
   --hr-color: #906000;
   --hr-text-color: #DDAA00;
@@ -184,12 +196,13 @@ body {
   --line-active: var(--milk-foam);
 }
 
+/* Styles for Light Theme */
 .theme-light {  
-/* Will Shown when Focussed on Active Obsidian Window  */
+/* Will be shown when the active Obsidian window is focused */
   --titlebar-background-focused: var(--latte);
-/* Will Shown when Focussed on Other Window   */
+/* Will be shown when another window is focused */
   --titlebar-background: var(--background-primary);
-/* Obsidian Window Frame  The Upper Right Tabs (Exit, Resize, ) */
+/* Obsidian Window Frame (Upper Right Tabs: Exit, Resize) */
   --titlebar-text-color-focused:var(--americano);
   --titlebar-text-color: var(--americano);  
 
@@ -198,13 +211,13 @@ body {
   --background-secondary: var(--milk-foam); 
   --background-secondary-alt: var(--hazelnut);
   --background-modifier-border: var(--latte);
-  --background-modifier-form-field: var(latte);
+  --background-modifier-form-field: var(--latte); /* Corrected typo */
   --background-modifier-form-field-highlighted: #151000;
   --background-modifier-box-shadow: #151000;
   --background-modifier-success: var(--green-beans);
-  --background-modifier-error: #FFFF00;	
-  --background-modifier-error-hover: #FF5000;	
-  --background-modifier-cover: #F0F00000;
+  --background-modifier-error: var(--red-robusta-beans);	/* Using theme color variable */
+  --background-modifier-error-hover: var(--red-robusta-beans);	/* Using theme color variable */
+  --background-modifier-cover: rgba(224, 208, 128, 0.5); /* Using --latte with opacity */
 
   /* Text */
   --text-accent: var(--cappucino);
@@ -214,7 +227,7 @@ body {
   --text-faint: var(--moccacino);	
   --text-error: var(--red-robusta-beans);	
   --text-error-hover: var(--red-robusta-beans);
-  --text-highlight-color: var(--milk-foam);
+  /* --text-highlight-color: var(--milk-foam); This variable was unused, so it's removed */
   --text-highlight-bg: var(--milk-foam);
   --text-highlight-bg-active: var(--hazelnut);
   --text-selection:var(--hazelnut);
@@ -232,23 +245,23 @@ body {
   --nav-header-color: var(--dark-beans);
   --nav-item-color: var(--light-beans);
   --nav-item-color-hover: var(--americano);
-  --nav-item-color-selected: #00FF00;
+  --nav-item-color-selected: var(--cappucino); /* Using theme color variable */
   --nav-item-color-highlighted: var(--red-robusta-beans);
   
   --nav-item-background-hover: var(--hazelnut);
-  --nav-item-background-selected: ;
+  --nav-item-background-selected: var(--hazelnut); /* Provided a value */
 
   --nav-item-color-active: var(--light-beans);
   --nav-item-background-active:	var(--hazelnut);
 
   --nav-indetation-guide-color:	var(--dark-beans);
   --nav-collapse-icon-color: #906000;
-  --nav-collapse-icon-color-collapsed: ;
+  --nav-collapse-icon-color-collapsed: var(--moccacino); /* Provided a value */
 
   --link-color:var(--moccacino);
   --link-color-hover: var(--crema);
   --link-unresolved-color: var(--moccacino);
-  --link-unresolved-opacity:;
+  --link-unresolved-opacity:50%; /* Provided a value */
   --link-decoration: none;
   --link-decoration-hover:line-through;
   --link-unresolved-filter: none;
@@ -261,7 +274,7 @@ body {
   --scrollbar-bg: var(--crema);
   --scrollbar-thumb-bg: var(--hazelnut);
   
-    /* BUTTONS | on todo settings, canvas side buttons */
+  /* Buttons | on todo settings, canvas side buttons */
   --text-on-accent: var(--americano);
   --text-on-accent-hover: var(--americano);
   --interactive-normal: var(--milk-foam);	
@@ -272,7 +285,7 @@ body {
 
   --tag-color: var(--moccacino);
   --tag-color-hover: var(--crema);
-  --tag-background:;  var(--americano);
+  --tag-background: var(--americano); /* Corrected syntax */
   --tag-background-hover: var(--americano);
   --tag-border-color:var(--americano) ;
   --tag-border-color-hover: var(--americano);
@@ -285,9 +298,9 @@ body {
   --table-header-weight: bold;
   --table-header-color: var(--text-accent);
   --table-text-color: var(--text-normal);
-  --table-column-alt-background:;
+  --table-column-alt-background: var(--background-secondary-alt); /* Provided a value */
   --table-row-background-hover: var(--background-secondary-alt) ;
-  --table-row-alt-background var(--background-secondary-alt);
+  --table-row-alt-background: var(--background-secondary-alt); /* Corrected syntax */
   --table-selection: var(--cappucino);
   --table-selection-blend-mode: soft-light ;
   --table-selection-border-color: var(--cappucino);
@@ -297,16 +310,17 @@ body {
   --table-drag-handle-background-active: var(--accent);
 }
 
-/* Primary Tab Line Highlight ======= Primary Tab Line Hightlight ======== Primary Tab Line Highlight */
-/* inspired from : Cyber Glow Obsidian Themes | https://github.com/ArtexJay/Obsidian-CyberGlow */
+/* Primary Tab Line Highlight */
+/* Inspired by: Cyber Glow Obsidian Themes | https://github.com/ArtexJay/Obsidian-CyberGlow */
 body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-active:not(:has(.mk-note-footer, .mk-floweditor-container)) {
     background: var(--background-secondary);
     border-radius:  var(--radius-s);
     border-image-slice: 1;
     border-top: 3px solid;
     border-image-source: linear-gradient(to right, transparent, var(--background-modifier-border), transparent);
-    border-bottom: 3px solid; }
-/* ### Hover Line Highlight on Main Tabs ### */
+    border-bottom: 3px solid; 
+}
+/* Hover Line Highlight on Main Tabs */
 .markdown-source-view.mod-cm6 .cm-line:hover {
     background: var(--background-secondary);
     border-radius:  var(--radius-s);
@@ -314,17 +328,18 @@ body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-ac
     border-top: 1px solid;
     border-image-source: linear-gradient(to right, transparent, var(--background-modifier-border), transparent);
     border-bottom: 1px solid;
-    opacity: 1; }
-/* Primary Tab Line Highlight ======= Primary Tab Line Hightlight ======== Primary Tab Line Highlight */
+    opacity: 1; 
+}
 
-/** ### File Explorer Upper border ### **/
+/* File Explorer Upper border */
 .nav-header {
     border-image-slice: 1;
     border-top: 1px solid;
     border-image-source: linear-gradient(to right, transparent, #503010, transparent);
-    border-bottom: 1px solid; }
+    border-bottom: 1px solid; 
+}
 
-/** ### Nav Line Highlight File Active Stying ### **/
+/* Nav Line Highlight File Active Styling */
 .nav-file-title.is-active {
     background: var(--background-primary);
     color: var(--text-normal);
@@ -332,70 +347,77 @@ body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-ac
     border-image-slice: 1;
     border-top: 0px solid;
     border-image-source: linear-gradient(to right, transparent, #503010, transparent);
-    border-bottom: 0px solid; }
-/** ### Nav Line Highlight File Active Stying ### **/
+    border-bottom: 0px solid; 
+}
 
-
-/*Styles Hover for Search Items */
-.tree-item-self.is-clickable:hover,.suggestion-item.is-selected:not(.mod-group):hover {
-    background: var(--background-seconds-alt);
+/* Styles Hover for Search Items */
+.tree-item-self.is-clickable:hover, .suggestion-item.is-selected:not(.mod-group):hover {
+    background: var(--background-secondary-alt); /* Corrected typo */
     color: var(--light-beans);
     border-image-slice: 1;
     border-top: 1px solid;
     border-image-source: linear-gradient(to right, transparent, #302000, transparent);
-    border-bottom: 1px solid; }
+    border-bottom: 1px solid; 
+}
 
-/*============ File Explorer Navigation =================*/
+/* File Explorer Navigation */
 .nav-file-title.is-dragging {
-    color: var(--background-secondary-alt); }
-/* inspired from : Cyber Glow Obsidian Themes | https://github.com/ArtexJay/Obsidian-CyberGlow */
+    color: var(--background-secondary-alt); 
+}
+/* Inspired by: Cyber Glow Obsidian Themes | https://github.com/ArtexJay/Obsidian-CyberGlow */
 
-/* File Explorer Icon ==================== File Explorer Icon ==================== File Explorer Icon */
+/* File Explorer Icon */
 .nav-folder-title .nav-folder-title-content::before { 
-    content: '📂 '; }
+    content: '📂 '; 
+}
 .nav-file-title .nav-file-title-content::before { 
-    content: '📝 '; }
-/* File Explorer Icon ==================== File Explorer Icon ==================== File Explorer Icon */
+    content: '📝 '; 
+}
 
-
-/* Highlight ====================================== Highlight ====================================== Highlight */
+/* Highlight */
 .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight,
 .markdown-rendered mark {
     background-color: var(--crema);
     color: var(--americano);
-    padding: 1px 3px;}
-/* Highlight ====================================== Highlight ====================================== Highlight */
+    padding: 1px 3px;
+}
 
-/* Fonts ====================================== Fonts ====================================== Fonts 
+/* Fonts */
+/* Example font usage:
 .markdown-source-view {
   font-family: monospace;}  
 .markdown-source-view.mod-cm6 .cm-scroller {
   font-family: Helvetica;} 
 .markdown-preview-view,
 .cm-scroller {
-  font-family: Helvetica;} /* For reading view */
-/* PDF Print JS  ============================ PDF Print JS ============================ PDF Print JS  */
+  font-family: Helvetica;} */ /* For reading view */
+
+/* PDF Print JS Settings */
 /* reading mode */
 .markdown-preview-view p {
   text-align: justify;
-  text-justify: inter-word;}
+  text-justify: inter-word;
+}
 /* source view and live preview */
 .markdown-source-view.mod-cm6 .cm-line {
 text-align: justify;
-text-justify: inter-word;}
-.markdown-preview-view {2
-  font-family: "Times New Roman", Times, serif;}
+text-justify: inter-word;
+}
+.markdown-preview-view {
+  font-family: "Times New Roman", Times, serif;
+}
 /* For edit view (legacy editor and live preview) */
 .markdown-source-view,
 .cm-content {
-  font-family: "Times New Roman", Times, serif;}
-/* ================================*/
-@import "pdf-print.js";
+  font-family: "Times New Roman", Times, serif;
+}
+
 @media print {
   @page {
     margin-top: 1.1in;
-    margin-bottom: 1.3in;}
-code {
+    margin-bottom: 1.3in;
+  }
+  code {
     tab-size: 4;
     text-align: justify;
     text-justify: inter-word;
@@ -403,8 +425,9 @@ code {
     line-height: 2;
     margin: 0px 55px;
     padding-bottom: 0.5em; /* Adjust the value as needed */
-    margin-bottom: 0.5em; /* Adjust the value as needed */  }
-p {
+    margin-bottom: 0.5em; /* Adjust the value as needed */  
+  }
+  p {
     font-family: "Times New Roman", Times, serif;
     font-size: 12px;
     text-align: justify;
@@ -413,58 +436,59 @@ p {
     line-height: 2;
     margin: 0px 55px;
     padding-bottom: 0.5em; /* Adjust the value as needed */
-    margin-bottom: 0.5em; /* Adjust the value as needed */  }
+    margin-bottom: 0.5em; /* Adjust the value as needed */  
+  }
   :is(h1, h2, h3, h4, h5, h6) {
     font-family: "Times New Roman", Times, serif !important; 
     color: orange !important;
-    text-align: center;}
+    text-align: center;
+  }
   h1 {
     font-size: 30px !important;
     margin-top: 30px !important;
     margin-bottom: 30px !important;
-    page-break-before: always;}}
-/* PDF Print JS  ============================ PDF Print JS ============================ PDF Print JS  */
+    page-break-before: always;
+  }
+}
 
-
-/* Fonts ====================================== Fonts ====================================== Fonts */
-
-/* Prompt ====================================== prompt ====================================== propmt */
-/* Prompt ====================================== prompt ====================================== propmt */
-/*Prompt Style*/
+/* Prompt Styles */
 .prompt {
     background: var(--background-settings);
     backdrop-filter: blur(9px) saturate(120%) !important;
     border-image-slice: 0;
     border-image-source: linear-gradient(to top, transparent, var(--light-beans) , transparent);
     border-right: 1px solid;
-    border-left: 1x solid; }
-/*Prompt Item Style*/
+    border-left: 1px solid; /* Corrected typo */
+}
+/* Prompt Item Styles */
 .suggestion-item {
     background: var(--background-primary);
     color: var(--text-accent);
     border-top: 0px solid transparent;
-    border-bottom: 0px solid transparent; }
+    border-bottom: 0px solid transparent; 
+}
 .suggestion-item.is-selected {
-    /* Gaya untuk item yang dipilih via keyboard (Up/Down) */
-    background: var(--background-secondary); /* Warna yang lebih menonjol */
-    color: var(--text-normal); /* Warna teks yang kontras */
-    border-top: 1px solid var(--background-modifier-border); /* Contoh border highlight */
-    border-bottom: 1px solid var(--background-modifier-border);}
-/*Prompt Tag Color Fixed*/
+    /* Style for items selected via keyboard (Up/Down) */
+    background: var(--background-secondary); /* More prominent color */
+    color: var(--text-normal); /* Contrasting text color */
+    border-top: 1px solid var(--background-modifier-border); /* Example highlight border */
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+/* Fixed Prompt Tag Color */
 .suggestion-item.mod-complex .suggestion-hotkey {
     background-color: var(--moccacino) ;
-    color: var(--hazelnut); }
-/*Prompt Input*/
+    color: var(--hazelnut); 
+}
+/* Prompt Input */
 input.prompt-input {
     border-radius: 5px;
     margin: 5px;
-    background: var(--background-settings-2);x
-    padding: 15px; }
-/* Prompt ====================================== prompt ====================================== propmt */
-/* Prompt ====================================== prompt ====================================== propmt */
+    background: var(--background-settings); /* Corrected typo, using --background-settings */
+    padding: 15px; 
+}
 
-/* =============== Side Dock Toggle Obsidian Logo ================*/
-/*Custom Styled L-Sidebar Toggle */
+/* Side Dock Toggle Obsidian Logo */
+/* Custom Styled Left Sidebar Toggle */
 .is-hidden-frameless .sidebar-toggle-button.mod-left>.clickable-icon,
 body:not(.is-tablet) .is-mobile .view-header-nav-buttons,
 .is-mobile .mod-left-split-toggle,
@@ -477,138 +501,37 @@ body.is-tablet .sidebar-toggle-button.mod-left>.clickable-icon {
     background-color: var(--hazelnut);
     background-blend-mode: luminosity;
     padding: 8px 1px 9px 9px;
-    background-image: var(--New-Obsidiantoggle); }
-/*Custom Styled L-Sidebar Toggle*/
-/*Hover Highlight for Custom Toggle*/
+    background-image: var(--New-Obsidiantoggle); 
+}
+/* Hover Highlight for Custom Toggle */
 body.is-hidden-frameless .sidebar-toggle-button.mod-left:hover {
     background: var(--crema);
     border-radius: 10px;
     border-image-slice: 1;
     border-image-source: linear-gradient(to top, transparent, var(--text-accent), transparent);
     border-left: 0px solid;
-    border-right: 0px solid; }
-/*Hover Highlight for Custom Toggle*/
-/*Centers and adds Styles for Tab Headers*/
+    border-right: 0px solid; 
+}
+/* Centers and adds Styles for Tab Headers */
 .mod-left-split .workspace-tab-header-container-inner,
 .mod-right-split .workspace-tab-header-container-inner {
     width: 100%;
     justify-content: center;
     border-image-slice: 1;
     border-image-source: linear-gradient(to right, transparent, #906000, transparent);
-    border-bottom: 0px solid; }
-/*Corrects Position of Custom Sidebar toggle*/
+    border-bottom: 0px solid; 
+}
+/* Corrects Position of Custom Sidebar toggle */
 .workspace-ribbon .sidebar-toggle-button {
-    margin: 0px 0px 0px 0px; }
-/*Displays Full Custom Toggle*/
+    margin: 0px 0px 0px 0px; 
+}
+/* Displays Full Custom Toggle */
 .sidebar-toggle-button {
     align-items: center;
-    padding: 0 0 0 0; }
-/* =============== Side Dock Toggle Obsidian Logo ================*/
-
-/* Upper Left Obsidian Logo Side Dock Toggle  ======================================================= */
-body {
-    --New-Obsidiantoggle: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='18' height='18' fill='none' stroke='currentColor' stroke-width='30' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E");}
-/* Upper Left Obsidian Logo Side Dock Toggle  ======================================================= */
-
-/* This is a fork from 2 Obsidian Themes i found on, that have the similar design, so i make it a completely easy to use for everyone else  */
-
-/* Obsidian Separator Line  ================================================= Obsidian Separator Line */
-body{
---newoutlined-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='18' height='18' fill='none' stroke='currentColor' stroke-width='32' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E");
---outlined-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='15 -3 69 106'%3E%3Cpath d='M 30.91 17.52 L 34.43 35.7 M 61.44 14.41 L 62.61 0 M 34.43 35.7 L 37.57 90.47 M 81 26.39 L 61.44 14.41 L 34.43 35.7 L 65.35 100 M 62.61 0 L 30.91 17.52 L 18 45.45 L 37.57 90.47 L 65.35 100 L 70.44 89.8 L 81 26.39 L 62.61 0 Z' stroke='%23000000' stroke-width='4' fill='none'/%3E%3C/svg%3E");
---CG-line-width: 50rem;
---file-line-width: var(--CG-line-width);
-/*max min icons*/
---win-maximize: url("data:image/svg+xml,%3Csvg fill='none' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m4.5 3c-.82843 0-1.5.67157-1.5 1.5v7c0 .8284.67157 1.5 1.5 1.5h7c.8284 0 1.5-.6716 1.5-1.5v-7c0-.82843-.6716-1.5-1.5-1.5zm0 1h7c.2761 0 .5.22386.5.5v7c0 .2761-.2239.5-.5.5h-7c-.27614 0-.5-.2239-.5-.5v-7c0-.27614.22386-.5.5-.5z' fill='%23212121'/%3E%3C/svg%3E");
---win-minimize: url("data:image/svg+xml,%3Csvg fill='none' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23212121'%3E%3Cpath d='m5.08496 4c.20592-.5826.76154-1 1.41465-1h3.5c1.65689 0 2.99999 1.34315 2.99999 3v3.5c0 .6531-.4174 1.2087-1 1.4146v-4.9146c0-1.10457-.8954-2-1.99999-2z'/%3E%3Cpath d='m4.5 5h5c.8284 0 1.5.67157 1.5 1.5v5c0 .8284-.6716 1.5-1.5 1.5h-5c-.82843 0-1.5-.6716-1.5-1.5v-5c0-.82843.67157-1.5 1.5-1.5zm0 1c-.27614 0-.5.22386-.5.5v5c0 .2761.22386.5.5.5h5c.27614 0 .5-.2239.5-.5v-5c0-.27614-.22386-.5-.5-.5z'/%3E%3C/g%3E%3C/svg%3E");}
-/* Obsidian Separator Line  ================================================= Obsidian Separator Line */
-
-
-/* Lists ======================================== Lists ======================================== List */
-/*Sets uncollapsed bullet point with animations*/
-li:not(.is-collapsed) .list-bullet:after, .cm-formatting-list .list-bullet:after {
-    content: '▻';
-    color: var(--text-accent);
-    background: transparent;
-    font-weight: bold;
-    transform: translate(7px, 5px) rotate(90deg);
-    text-shadow: 0 0 0px var(--text-accent), 0 0 0px var(--list-marker-color), 0 0 0px var(--text-accent), 0 0 0px var(--text-accent); }
-/*Realigns Custom bullet point*/
-.list-bullet {
-    align-items: baseline;
-    margin-right: 0px;
-    opacity: 1; }
-/*Sets collapsed bullet point with animations*/
-li.is-collapsed .list-bullet:after, .is-collapsed~.cm-formatting-list .list-bullet:after {
-    content: '▻';
-    color: var(--text-accent);
-    font-weight: bold;
-    text-shadow: 0 0 5px var(--text-accent), 0 0 5px var(--text-accent), 0 0 20px var(--text-accent), 0 0 35px var(--text-accent);
-    background-color: transparent;
-    box-shadow: none;
-    transform: translate(-10px, 0px) rotate(360deg);
-    margin-left: -0.4em; 
-    opacity: 1; }
-/*Removes hover dot */
-.cm-fold-indicator:hover~.cm-formatting-list .list-bullet:after,
-.cm-fold-indicator:hover.is-collapsed~.cm-formatting-list .list-bullet:after {
-    background-color: transparent;
-    box-shadow: none; }
-    opacity: 0; 
-/* Lists ======================================== Lists ======================================== List */
-
-/* Number list =============================== Number list ============================== Number list */
-/*Styles Default Number List*/
-ol>li::marker, ul>li::marker, .cm-s-obsidian .cm-formatting-list {
-    color: var(text-accent);
-    font-weight: bold;
-    border-image-source: linear-gradient(to right, var(--text-accent), transparent);
-    text-shadow: 0 0 5px var(--text-accent), 0 0 0px var(--text-accent),
-        0 0 0px var(--text-accent), 0 0 0px var(--text-accent); }
-/*Adds style to the Identation guide */
-.markdown-rendered.show-indentation-guide li>ul::before, .markdown-rendered.show-indentation-guide li>ol::before,
-.markdown-source-view.mod-cm6 .cm-indent::before {
-    background:  var(--text-accent);
-    box-shadow: 0 0 0px var(--text-accent), 0 0 0px var(--text-accent),
-        0 0 0px var(--text-accent), 0 0 0px var(--text-accent);
-    width: 0px; }
-/*Aligns Number List with identation guide*/
-.markdown-rendered ol {
-    margin-left: 10px; }
-/* Number list =============================== Number list ============================== Number list */
-
-;*============ Graph =================*/
-.graph-view.color-text {
-    color: var(--text-normal); }
-.graph-view.color-arrow {
-    color: var(--text-accent); }
-.graph-view.color-line {
-    color: var(--caramel); }
-.graph-view.color-fill {
-    color: #BB8000; }
-.graph-view.color-fill-tag {
-    color: #00FF00; }
-.graph-view.color-fill-focused {
-    color: #DDAA00; }
-.graph-view.color-fill-unresolved {
-    color: #--var(--crema); }
-.graph-view.color-fill-attachment {
-    color: #FFCC80; }
-
-/* This is a fork from 2 Obsidian Themes i found on, that have the similar design, so i make it a completely easy to use for everyone else  */
-
-/* The Horizontal Line Customization  */
-body{
---newoutlined-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='18' height='18' fill='none' stroke='currentColor' stroke-width='32' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E");
---outlined-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='15 -3 69 106'%3E%3Cpath d='M 30.91 17.52 L 34.43 35.7 M 61.44 14.41 L 62.61 0 M 34.43 35.7 L 37.57 90.47 M 81 26.39 L 61.44 14.41 L 34.43 35.7 L 65.35 100 M 62.61 0 L 30.91 17.52 L 18 45.45 L 37.57 90.47 L 65.35 100 L 70.44 89.8 L 81 26.39 L 62.61 0 Z' stroke='%23000000' stroke-width='4' fill='none'/%3E%3C/svg%3E");
---CG-line-width: 50rem;
---file-line-width: var(--CG-line-width);
-/*max min icons*/
---win-maximize: url("data:image/svg+xml,%3Csvg fill='none' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m4.5 3c-.82843 0-1.5.67157-1.5 1.5v7c0 .8284.67157 1.5 1.5 1.5h7c.8284 0 1.5-.6716 1.5-1.5v-7c0-.82843-.6716-1.5-1.5-1.5zm0 1h7c.2761 0 .5.22386.5.5v7c0 .2761-.2239.5-.5.5h-7c-.27614 0-.5-.2239-.5-.5v-7c0-.27614.22386-.5.5-.5z' fill='%23212121'/%3E%3C/svg%3E");
---win-minimize: url("data:image/svg+xml,%3Csvg fill='none' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23212121'%3E%3Cpath d='m5.08496 4c.20592-.5826.76154-1 1.41465-1h3.5c1.65689 0 2.99999 1.34315 2.99999 3v3.5c0 .6531-.4174 1.2087-1 1.4146v-4.9146c0-1.10457-.8954-2-1.99999-2z'/%3E%3Cpath d='m4.5 5h5c.8284 0 1.5.67157 1.5 1.5v5c0 .8284-.6716 1.5-1.5 1.5h-5c-.82843 0-1.5-.6716-1.5-1.5v-5c0-.82843.67157-1.5 1.5-1.5zm0 1c-.27614 0-.5.22386-.5.5v5c0 .2761.22386.5.5.5h5c.27614 0 .5-.2239.5-.5v-5c0-.27614-.22386-.5-.5-.5z'/%3E%3C/g%3E%3C/svg%3E");
+    padding: 0 0 0 0; 
 }
 
-/* The Horizontal Line Customization ====================================================================================================================== */
+/* Custom Horizontal Line Separator */
 .hr.cm-line hr {
   margin-block-start: 2em;
   margin-block-end: 0.8em;
@@ -616,8 +539,9 @@ body{
   border-image-slice: 1;
   border-width: 1px;
   text-align: -webkit-center;
-  border-image: linear-gradient(to left, transparent, var(--text-accent) 45%, transparent 45%, transparent 55%, var(--text-accent) 5%, transparent) 3; }
-/* Logo for Heading Line*/
+  border-image: linear-gradient(to left, transparent, var(--text-accent) 45%, transparent 45%, transparent 55%, var(--text-accent) 5%, transparent) 3; 
+}
+/* Logo for Heading Line */
 .markdown-preview-view hr::after {
   content: ' ';
   -webkit-mask-image: var(--newoutlined-logo);
@@ -627,8 +551,9 @@ body{
   background-color: var(--text-accent);
   position: absolute;
   transform: translate(-45%, -50%);
-  padding: 1rem; }
-/* The Logo Icon Source on Editing Mode  */
+  padding: 1rem; 
+}
+/* The Logo Icon Source on Editing Mode */
 .hr.cm-line hr::after {
   content: ' ';
   -webkit-mask-image: var(--newoutlined-logo);
@@ -638,8 +563,9 @@ body{
   background-color: var(--text-accent);
   position: absolute;
   transform: translate(-40%, -40%);
-  padding: 1rem; }
-/* make it center and works on Reading View Mode */
+  padding: 1rem; 
+}
+/* Make it center and works on Reading View Mode */
 .markdown-preview-view hr {
   margin-block-start: 3em;
   border: solid 0px transparent;
@@ -648,25 +574,111 @@ body{
   border-image-slice: 1;
   border-image: linear-gradient(to left, transparent, var(--text-accent) 45%, transparent 45%, transparent 55%, var(--text-accent) 5%, transparent) 3;
   text-align: -webkit-center;
-  margin-block-end: 0.5em; }
-/* The Horizontal Line Customization ====================================================================================================================== */
+  margin-block-end: 0.5em; 
+}
 
-/* cursor caret ====================================================== */
-/* Inspired from: https://github.com/Jopp-gh/Obsidian-Dune84 */
+/* Cursor Caret */
+/* Inspired by: https://github.com/Jopp-gh/Obsidian-Dune84 */
 .markdown-source-view.mod-cm6 .cm-content {
-  caret-color: var(--red-robusta-beans);}
-/* cursor caret ====================================================== */
+  caret-color: var(--red-robusta-beans);
+}
 
- /* CALLOUT ================================================================================= */
+ /* CALLOUT */
 .callout {
   border-width: 1px;
   border-color: var(--crema);
   background-color: var(--background-secondary);
   border-radius: 15px;
-  border-style: dotted;}
+  border-style: dotted;
+}
 .callout-title {
   color: var(--text-faint);
-  font-size: 12.9px;}
+  font-size: 12.9px;
+}
 .callout > .callout-content p:last-child {
-   margin-bottom: 0;}
- /* CALLOUT ================================================================================= */
+   margin-bottom: 0;
+}
+
+/* Lists */
+/* Sets uncollapsed bullet point with animations */
+li:not(.is-collapsed) .list-bullet:after, .cm-formatting-list .list-bullet:after {
+    content: '▻';
+    color: var(--text-accent);
+    background: transparent;
+    font-weight: bold;
+    transform: translate(7px, 5px) rotate(90deg);
+    text-shadow: 0 0 0px var(--text-accent), 0 0 0px var(--list-marker-color), 0 0 0px var(--text-accent), 0 0 0px var(--text-accent); 
+}
+/* Realigns Custom bullet point */
+.list-bullet {
+    align-items: baseline;
+    margin-right: 0px;
+    opacity: 1; 
+}
+/* Sets collapsed bullet point with animations */
+li.is-collapsed .list-bullet:after, .is-collapsed~.cm-formatting-list .list-bullet:after {
+    content: '▻';
+    color: var(--text-accent);
+    font-weight: bold;
+    text-shadow: 0 0 5px var(--text-accent), 0 0 5px var(--text-accent), 0 0 20px var(--text-accent), 0 0 35px var(--text-accent);
+    background-color: transparent;
+    box-shadow: none;
+    transform: translate(-10px, 0px) rotate(360deg);
+    margin-left: -0.4em; 
+    opacity: 1; 
+}
+/* Removes hover dot */
+.cm-fold-indicator:hover~.cm-formatting-list .list-bullet:after,
+.cm-fold-indicator:hover.is-collapsed~.cm-formatting-list .list-bullet:after {
+    background-color: transparent;
+    box-shadow: none; 
+    opacity: 0; /* Corrected opacity placement */
+}
+
+/* Numbered List */
+/* Styles Default Numbered List */
+ol>li::marker, ul>li::marker, .cm-s-obsidian .cm-formatting-list {
+    color: var(--text-accent); /* Corrected syntax */
+    font-weight: bold;
+    border-image-source: linear-gradient(to right, var(--text-accent), transparent);
+    text-shadow: 0 0 5px var(--text-accent), 0 0 0px var(--text-accent),
+        0 0 0px var(--text-accent), 0 0 0px var(--text-accent); 
+}
+/* Adds style to the Indentation guide */
+.markdown-rendered.show-indentation-guide li>ul::before, .markdown-rendered.show-indentation-guide li>ol::before,
+.markdown-source-view.mod-cm6 .cm-indent::before {
+    background:  var(--text-accent);
+    box-shadow: 0 0 0px var(--text-accent), 0 0 0px var(--text-accent),
+        0 0 0px var(--text-accent), 0 0 0px var(--text-accent);
+    width: 0px; 
+}
+/* Aligns Numbered List with indentation guide */
+.markdown-rendered ol {
+    margin-left: 10px; 
+}
+
+/* Graph */
+.graph-view.color-text {
+    color: var(--text-normal); 
+}
+.graph-view.color-arrow {
+    color: var(--text-accent); 
+}
+.graph-view.color-line {
+    color: var(--caramel); 
+}
+.graph-view.color-fill {
+    color: #BB8000; 
+}
+.graph-view.color-fill-tag {
+    color: #00FF00; 
+}
+.graph-view.color-fill-focused {
+    color: #DDAA00; 
+}
+.graph-view.color-fill-unresolved {
+    color: var(--crema); /* Corrected syntax */
+}
+.graph-view.color-fill-attachment {
+    color: #FFCC80; 
+}
