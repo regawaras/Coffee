@@ -8,7 +8,7 @@
   --expresso: #502000;
   --dark-roast: #603020;
   --light-beans: #504010;
-  --moccacino: #6F3F00; 
+  --moccacino: #553F00; 
 /* Yellowish*/
   --golden-brew: #906000;
   --cappucino: #885500;
@@ -20,7 +20,7 @@
   --red-robusta-beans: #FF3000;
   --green-beans: #00FF55;
   --latte: #E0D080;
-  --milk-foam: #E0EEAA;
+  --milk-foam: #ECEEAA;
   --white-luwak: #FFFFFF;
 /* Lighter */
 }
@@ -74,8 +74,8 @@ body {
   --background-modifier-cover: #00000088; /* You will know when you check Command Bar */
 
   /* Text */
-  --text-accent: var(--moccacino);
-  --text-accent-hover: var(--hazelnut);
+  --text-accent: var(--hazelnut);
+  --text-accent-hover: var(--crema);
   --text-normal: var(--milk-foam);	
   --text-muted: var(--milk-foam);	
   --text-faint: var(--hazelnut) ;	
@@ -83,7 +83,7 @@ body {
   --text-error-hover: var(--red-robusta-beans);
   --text-highlight-bg: var(--moccacino);
   --text-highlight-bg-active: var(--golden-brew);
-  --text-selection:var(--red-robusta-beans);
+  --text-selection:var(--moccacino);
 
   --h1-color: var(--hazelnut);
   --h2-color: var(--crema);
@@ -186,16 +186,16 @@ body {
 
 .theme-light {  
 /* Will Shown when Focussed on Active Obsidian Window  */
-  --titlebar-background-focused: var(--white-luwak);
+  --titlebar-background-focused: var(--latte);
 /* Will Shown when Focussed on Other Window   */
-  --titlebar-background: var(--milk-foam);
+  --titlebar-background: var(--background-primary);
 /* Obsidian Window Frame  The Upper Right Tabs (Exit, Resize, ) */
   --titlebar-text-color-focused:var(--americano);
   --titlebar-text-color: var(--americano);  
 
-  --background-primary: var(--milk-foam); 
+  --background-primary: var(--white-luwak); 
   --background-primary-alt: var(--latte);
-  --background-secondary: var(--white-luwak); 
+  --background-secondary: var(--milk-foam); 
   --background-secondary-alt: var(--hazelnut);
   --background-modifier-border: var(--latte);
   --background-modifier-form-field: var(latte);
@@ -247,7 +247,7 @@ body {
 
   --link-color:var(--moccacino);
   --link-color-hover: var(--crema);
-  --link-unresolved-color: var(--expresso);
+  --link-unresolved-color: var(--moccacino);
   --link-unresolved-opacity:;
   --link-decoration: none;
   --link-decoration-hover:line-through;
@@ -300,19 +300,19 @@ body {
 /* Primary Tab Line Highlight ======= Primary Tab Line Hightlight ======== Primary Tab Line Highlight */
 /* inspired from : Cyber Glow Obsidian Themes | https://github.com/ArtexJay/Obsidian-CyberGlow */
 body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-active:not(:has(.mk-note-footer, .mk-floweditor-container)) {
-    background: rgba(170, 100, 0, 0.2);
+    background: var(--background-secondary);
     border-radius:  var(--radius-s);
     border-image-slice: 1;
-    border-top: 1px solid;
-    border-image-source: linear-gradient(to right, transparent, #906000, transparent);
-    border-bottom: 1px solid; }
+    border-top: 3px solid;
+    border-image-source: linear-gradient(to right, transparent, var(--background-modifier-border), transparent);
+    border-bottom: 3px solid; }
 /* ### Hover Line Highlight on Main Tabs ### */
 .markdown-source-view.mod-cm6 .cm-line:hover {
-    background: rgba(140, 100, 0, 0.1);
+    background: var(--background-secondary);
     border-radius:  var(--radius-s);
     border-image-slice: 1;
     border-top: 1px solid;
-    border-image-source: linear-gradient(to right, transparent, #151000, transparent);
+    border-image-source: linear-gradient(to right, transparent, var(--background-modifier-border), transparent);
     border-bottom: 1px solid;
     opacity: 1; }
 /* Primary Tab Line Highlight ======= Primary Tab Line Hightlight ======== Primary Tab Line Highlight */
@@ -366,14 +366,66 @@ body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-ac
     padding: 1px 3px;}
 /* Highlight ====================================== Highlight ====================================== Highlight */
 
-/* Fonts ====================================== Fonts ====================================== Fonts */
+/* Fonts ====================================== Fonts ====================================== Fonts 
 .markdown-source-view {
-  font-family: monospace;} /* For the legacy editor (editing view) */
+  font-family: monospace;}  
 .markdown-source-view.mod-cm6 .cm-scroller {
-  font-family: Helvetica;} /* For the new editor (live preview and source mode) */
+  font-family: Helvetica;} 
 .markdown-preview-view,
 .cm-scroller {
   font-family: Helvetica;} /* For reading view */
+/* PDF Print JS  ============================ PDF Print JS ============================ PDF Print JS  */
+/* reading mode */
+.markdown-preview-view p {
+  text-align: justify;
+  text-justify: inter-word;}
+/* source view and live preview */
+.markdown-source-view.mod-cm6 .cm-line {
+text-align: justify;
+text-justify: inter-word;}
+.markdown-preview-view {2
+  font-family: "Times New Roman", Times, serif;}
+/* For edit view (legacy editor and live preview) */
+.markdown-source-view,
+.cm-content {
+  font-family: "Times New Roman", Times, serif;}
+/* ================================*/
+@import "pdf-print.js";
+@media print {
+  @page {
+    margin-top: 1.1in;
+    margin-bottom: 1.3in;}
+code {
+    tab-size: 4;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 2em;
+    line-height: 2;
+    margin: 0px 55px;
+    padding-bottom: 0.5em; /* Adjust the value as needed */
+    margin-bottom: 0.5em; /* Adjust the value as needed */  }
+p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12px;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 2em;
+    line-height: 2;
+    margin: 0px 55px;
+    padding-bottom: 0.5em; /* Adjust the value as needed */
+    margin-bottom: 0.5em; /* Adjust the value as needed */  }
+  :is(h1, h2, h3, h4, h5, h6) {
+    font-family: "Times New Roman", Times, serif !important; 
+    color: orange !important;
+    text-align: center;}
+  h1 {
+    font-size: 30px !important;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+    page-break-before: always;}}
+/* PDF Print JS  ============================ PDF Print JS ============================ PDF Print JS  */
+
+
 /* Fonts ====================================== Fonts ====================================== Fonts */
 
 /* Prompt ====================================== prompt ====================================== propmt */
@@ -525,6 +577,24 @@ ol>li::marker, ul>li::marker, .cm-s-obsidian .cm-formatting-list {
     margin-left: 10px; }
 /* Number list =============================== Number list ============================== Number list */
 
+;*============ Graph =================*/
+.graph-view.color-text {
+    color: var(--text-normal); }
+.graph-view.color-arrow {
+    color: var(--text-accent); }
+.graph-view.color-line {
+    color: var(--caramel); }
+.graph-view.color-fill {
+    color: #BB8000; }
+.graph-view.color-fill-tag {
+    color: #00FF00; }
+.graph-view.color-fill-focused {
+    color: #DDAA00; }
+.graph-view.color-fill-unresolved {
+    color: #--var(--crema); }
+.graph-view.color-fill-attachment {
+    color: #FFCC80; }
+
 /* This is a fork from 2 Obsidian Themes i found on, that have the similar design, so i make it a completely easy to use for everyone else  */
 
 /* The Horizontal Line Customization  */
@@ -591,11 +661,11 @@ body{
 .callout {
   border-width: 1px;
   border-color: var(--crema);
-  background-color: var(--americano);
+  background-color: var(--background-secondary);
   border-radius: 15px;
   border-style: dotted;}
 .callout-title {
-  color: var(--crema);
+  color: var(--text-faint);
   font-size: 12.9px;}
 .callout > .callout-content p:last-child {
    margin-bottom: 0;}
