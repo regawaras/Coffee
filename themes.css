@@ -33,7 +33,7 @@ body {
   --accent-s: 50%;
   --accent-l: 25%;
   
-  --font-default: "Arial Black";
+  --font-default: "Times New Roman";
   --font-monospace-default: "Cascadia Mono";
   --font-text-theme: ;
   --font-size-default: 20px; 
@@ -149,7 +149,7 @@ body {
   --icon-color:  var(--hazelnut);
   --icon-color-hover: var(--milk-foam);
 
-  --nav-item-color: var(--hazelnut);
+  --nav-item-color: var(--americano);
   --nav-item-color-hover: var(--milk-foam);
   --nav-item-color-active: var(--caramel);
   --nav-item-color-selected:var(--caramel);
@@ -231,9 +231,9 @@ body {
   --code-background:var(--latte) ; 
   --code-background-hver: var(--americano);
 
-  --nav-header-color: var(--dark-beans);
-  --nav-item-color: var(--light-beans);
-  --nav-item-color-hover: var(--americano);
+  --nav-header-color: var(--americano);
+  --nav-item-color: var(--americano);
+  --nav-item-color-hover: var(--white-luwak);
   --nav-item-color-selected: var(--cappucino); 
   --nav-item-color-highlighted: var(--red-robusta-beans);
   
@@ -415,13 +415,13 @@ p {
     padding-bottom: 0.5em; /* Adjust the value as needed */
     margin-bottom: 0.5em; /* Adjust the value as needed */  }
   :is(h1, h2, h3, h4, h5, h6) {
-    font-family: "Times New Roman", Times, serif !important; 
-    color: orange !important;
+    font-family: "Times New Roman", Times, serif; 
+    color: var(--crema);
     text-align: center;}
   h1 {
-    font-size: 30px !important;
-    margin-top: 30px !important;
-    margin-bottom: 30px !important;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     page-break-before: always;}}
 /* PDF Print JS  ============================ PDF Print JS ============================ PDF Print JS  */
 
@@ -433,7 +433,7 @@ p {
 /*Prompt Style*/
 .prompt {
     background: var(--background-settings);
-    backdrop-filter: blur(9px) saturate(120%) !important;
+    backdrop-filter: blur(9px) saturate(120%);
     border-image-slice: 0;
     border-image-source: linear-gradient(to top, transparent, var(--light-beans) , transparent);
     border-right: 1px solid;
@@ -612,7 +612,7 @@ body{
 .hr.cm-line hr {
   margin-block-start: 2em;
   margin-block-end: 0.8em;
-  border-top: 2.25px solid !important;
+  border-top: 2.25px solid;
   border-image-slice: 1;
   border-width: 1px;
   text-align: -webkit-center;
