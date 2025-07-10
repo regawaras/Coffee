@@ -19,10 +19,11 @@
 /* Balanced */
   --cafe-au-lait: #CCAA55;
   --red-robusta-beans: #FF3000;
+  --dark-green-beans: #005500 ;
   --green-beans: #00FF55;
   --latte: #E0D080;
-  --milk-foam: #ECEEAA;
-  --white-luwak: #FFFFFF;
+  --milk-foam: #ECDFAA;
+  --white-luwak: #F3F3C3;
 /* Lighter */
 }
 
@@ -187,7 +188,7 @@ body {
 
 .theme-light {  
 /* Will Shown when Focussed on Active Obsidian Window  */
-  --titlebar-background-focused: var(--latte);
+  --titlebar-background-focused: var(--milk-foam);
 /* Will Shown when Focussed on Other Window   */
   --titlebar-background: var(--background-primary);
 /* Obsidian Window Frame  The Upper Right Tabs (Exit, Resize, ) */
@@ -205,7 +206,7 @@ body {
   --background-modifier-success: var(--green-beans);
   --background-modifier-error: var(--red-robusta-beans);
   --background-modifier-error-hover: var(--red-robusta-beans);
-  --background-modifier-cover: rgba(224, 208, 128, 0.5); 
+  --background-modifier-cover: rgba(224, 208, 128, 0.0); 
   
   /* Text */
   --text-accent: var(--cappucino);
@@ -226,8 +227,9 @@ body {
   --h5-color: var(--crema);
   --h6-color: var(--crema);
 
-  --code-normal: var(--americano);
-  --code-background:var(--latte) ;  
+  --code-normal: var(--dark-green-beans);
+  --code-background:var(--latte) ; 
+  --code-background-hver: var(--americano);
 
   --nav-header-color: var(--dark-beans);
   --nav-item-color: var(--light-beans);
