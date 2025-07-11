@@ -301,7 +301,8 @@ body {
   font-size: 12px; 
   margin: 30px;
 }
-  /* Primary Tab Line Highlight ======= Primary Tab Line Hightlight ======== Primary Tab Line Highlight */
+
+/* Primary Tab Line Highlight ======= Primary Tab Line Hightlight ======== Primary Tab Line Highlight */
 /* inspired from : Cyber Glow Obsidian Themes | https://github.com/ArtexJay/Obsidian-CyberGlow */
 body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-active:not(:has(.mk-note-footer, .mk-floweditor-container)) {
     background: var(--background-secondary);
