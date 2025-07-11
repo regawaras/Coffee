@@ -676,24 +676,27 @@ text-justify: inter-word;
 /* ================================*/
 
 /* PDF Print JS  =========================== PDF Print JS =========================== PDF Print JS  */
-@import "pdf-print.js"; /* Pastikan ini ada di bagian awal, sebelum aturan lain dalam @media print */
+@import "pdf-print.js"; 
 @media print {
   @page {
     margin-top: 1.1in;
     margin-bottom: 1.3in;
+    margin-left: 1in;
+    margin-right: 1in;
+    @bottom-center {
+      content: counter(page);
   }
   ul li,
   ol li {
     text-align: justify;
     text-justify: inter-word;
-    /* Menyesuaikan margin dan indentasi agar konsisten dengan paragraf */
    /* margin: 15px 0px; /* Margin kiri-kanan yang sama dengan paragraf */
-    margin-top: 2px; /* Diubah untuk menghilangkan spasi atas */
-    margin-bottom: 2px; /* Diubah untuk menghilangkan spasi bawah */
-    margin-left: 15px; /* Pastikan margin kiri tetap 0 */
-    margin-right: 0px; /* Pastikan margin kanan tetap 0 */
-    text-indent: 0em; /* Indentasi baris pertama yang sama dengan paragraf */
-    line-height: 1.5; /* Tinggi baris yang sama dengan paragraf */
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 15px; 
+    margin-right: 0px; 
+    text-indent: 0em; 
+    line-height: 1.5;
     font-size: 12px;
   }
   code {
@@ -703,8 +706,8 @@ text-justify: inter-word;
     text-indent: 2em;
     line-height: 2;
     margin: 0px 55px;
-    padding-bottom: 0.5em; /* Sesuaikan nilai jika diperlukan */
-    margin-bottom: 0.5em; /* Sesuaikan nilai jika diperlukan */
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
   }
   p {
     font-family: "Times New Roman", Times, serif;
@@ -713,13 +716,12 @@ text-justify: inter-word;
     text-justify: inter-word;
     text-indent: 2em;
     line-height: 1.5;
-    margin: 0px 55px;
-    padding-bottom: 0.5em; /* Sesuaikan nilai jika diperlukan */
-    margin-bottom: 0.5em; /* Sesuaikan nilai jika diperlukan */
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
   }
   :is(h2, h3, h4, h5, h6) {
     font-family: "Times New Roman", Times, serif;
-    color: var(--moccacino); /* Menggunakan variabel warna tema Anda */
+    color: var(--moccacino); 
     text-align: left;
   }
   h1 {
