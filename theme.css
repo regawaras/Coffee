@@ -177,10 +177,10 @@ body {
   --blockquote-color: var(--crema);
 
 /* for line separator */
-  --hr-line-offset: 5%;
+  --hr-line-offset: ;
   --hr-color: var(--golden-brew);
   --hr-text-color: var(--crema);
-  --hr-text-offset: 2ch;
+  --hr-text-offset: 0ch;
   --hr-thickness: 7px;
   --line-active: var(--milk-foam);
 }
@@ -296,7 +296,12 @@ body {
   --table-drag-handle-background-active: var(--accent);
 }
 
-/* Primary Tab Line Highlight ======= Primary Tab Line Hightlight ======== Primary Tab Line Highlight */
+.inline-title {
+  text-align: center;
+  font-size: 12px; 
+  margin: 30px;
+}
+  /* Primary Tab Line Highlight ======= Primary Tab Line Hightlight ======== Primary Tab Line Highlight */
 /* inspired from : Cyber Glow Obsidian Themes | https://github.com/ArtexJay/Obsidian-CyberGlow */
 body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-active:not(:has(.mk-note-footer, .mk-floweditor-container)) {
     background: var(--background-secondary);
@@ -577,34 +582,37 @@ body{
   margin-block-start: 2em;
   margin-block-end: 2em;
   border-top: 2.25px solid;
+  border-bottom: 2.25px solid;
   border-image-slice: 1;
   border-width: 1px;
   text-align: -webkit-center;
-  border-image: linear-gradient(to left, transparent, var(--text-accent) 45%, transparent 45%, transparent 55%, var(--text-accent) 5%, transparent) 3; 
+  border-image: linear-gradient(to right, transparent, var(--text-accent) 40%, transparent 40%, transparent 55%, var(--text-accent) 5%, transparent) 3; 
+
 }
 /* Logo for Heading Line*/
 .markdown-preview-view hr::after {
   content: ' ';
   -webkit-mask-image: var(--newoutlined-logo);
-  -webkit-mask-size: 100%;
+  -webkit-mask-size: 70%;
   -webkit-mask-repeat: no-repeat;
   display: inline-block;
   background-color: var(--text-accent);
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translate(-40%, -40%);
   padding: 1rem; 
 }
 /* The Logo Icon Source on Editing Mode  */
 .hr.cm-line hr::after {
   content: ' ';
   -webkit-mask-image: var(--newoutlined-logo);
-  -webkit-mask-size: 100%;
+  -webkit-mask-size: 70%;
   -webkit-mask-repeat: no-repeat;
   display: inline-block;
   background-color: var(--text-accent);
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translate(-100%, -30%);
   padding: 1rem; 
+  margin-block: 0em; 
 }
 /* make it center and works on Reading View Mode */
 .markdown-preview-view hr {
@@ -614,7 +622,7 @@ body{
   border-image-slice: 1;
   border-image: linear-gradient(to left, transparent, var(--text-accent) 45%, transparent 45%, transparent 55%, var(--text-accent) 5%, transparent) 3;
   text-align: -webkit-center;
-  margin-block: 2em; 
+  margin-block: 0em; 
 }
 /* The Horizontal Line Customization ====================================================================================================================== */
 
@@ -651,8 +659,6 @@ body{
 .markdown-preview-view,
 .cm-scroller {
   font-family: Helvetica;} /* For reading view */
-
-
 .markdown-preview-view p {
   text-align: justify;
   text-justify: inter-word;
@@ -710,10 +716,10 @@ text-justify: inter-word;
   }
   p {
     font-family: "Times New Roman", Times, serif;
-    font-size: 15px;
+    font-size: 16px;
     text-align: justify;
     text-justify: inter-word;
-    text-indent: 0em;
+    text-indent: 2em;
     line-height: 1.5;
     padding-bottom: 0.5em;
     margin-bottom: 0.5em;
