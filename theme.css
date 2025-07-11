@@ -687,9 +687,13 @@ text-justify: inter-word;
     text-align: justify;
     text-justify: inter-word;
     /* Menyesuaikan margin dan indentasi agar konsisten dengan paragraf */
-    margin: 15px 0px; /* Margin kiri-kanan yang sama dengan paragraf */
+   /* margin: 15px 0px; /* Margin kiri-kanan yang sama dengan paragraf */
+    margin-top: 2px; /* Diubah untuk menghilangkan spasi atas */
+    margin-bottom: 2px; /* Diubah untuk menghilangkan spasi bawah */
+    margin-left: 15px; /* Pastikan margin kiri tetap 0 */
+    margin-right: 0px; /* Pastikan margin kanan tetap 0 */
     text-indent: 0em; /* Indentasi baris pertama yang sama dengan paragraf */
-    line-height: 1; /* Tinggi baris yang sama dengan paragraf */
+    line-height: 1.5; /* Tinggi baris yang sama dengan paragraf */
     font-size: 12px;
   }
   code {
