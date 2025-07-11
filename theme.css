@@ -575,7 +575,7 @@ body{
 /* The Horizontal Line Customization ============================================================================================= */
 .hr.cm-line hr {
   margin-block-start: 2em;
-  margin-block-end: 0.8em;
+  margin-block-end: 2em;
   border-top: 2.25px solid;
   border-image-slice: 1;
   border-width: 1px;
@@ -591,30 +591,30 @@ body{
   display: inline-block;
   background-color: var(--text-accent);
   position: absolute;
-  transform: translate(-45%, -50%);
+  transform: translate(-50%, -50%);
   padding: 1rem; 
 }
 /* The Logo Icon Source on Editing Mode  */
 .hr.cm-line hr::after {
   content: ' ';
   -webkit-mask-image: var(--newoutlined-logo);
-  -webkit-mask-size: 80%;
+  -webkit-mask-size: 100%;
   -webkit-mask-repeat: no-repeat;
   display: inline-block;
   background-color: var(--text-accent);
   position: absolute;
-  transform: translate(-40%, -40%);
-  padding: 1rem; }
+  transform: translate(-50%, -50%);
+  padding: 1rem; 
+}
 /* make it center and works on Reading View Mode */
 .markdown-preview-view hr {
-  margin-block-start: 3em;
   border: solid 0px transparent;
   height: 0;
   border-bottom: 2.25px solid;
   border-image-slice: 1;
   border-image: linear-gradient(to left, transparent, var(--text-accent) 45%, transparent 45%, transparent 55%, var(--text-accent) 5%, transparent) 3;
   text-align: -webkit-center;
-  margin-block-end: 0.5em; 
+  margin-block: 2em; 
 }
 /* The Horizontal Line Customization ====================================================================================================================== */
 
@@ -662,7 +662,7 @@ body{
 text-align: justify;
 text-justify: inter-word;
 }
-.markdown-preview-view {2
+.markdown-preview-view {
   font-family: "Times New Roman", Times, serif;}
 /* For edit view (legacy editor and live preview) */
 .markdown-source-view,
@@ -681,8 +681,8 @@ text-justify: inter-word;
   @page {
     margin-top: 1.1in;
     margin-bottom: 1.3in;
-    margin-left: 1in;
-    margin-right: 1in;
+    margin-left: 0.9in;
+    margin-right: 0.5in;
     @bottom-center {
       content: counter(page);
   }
@@ -690,14 +690,13 @@ text-justify: inter-word;
   ol li {
     text-align: justify;
     text-justify: inter-word;
-   /* margin: 15px 0px; /* Margin kiri-kanan yang sama dengan paragraf */
-    margin-top: 2px;
-    margin-bottom: 2px;
-    margin-left: 15px; 
-    margin-right: 0px; 
-    text-indent: 0em; 
-    line-height: 1.5;
-    font-size: 12px;
+   /* margin: 15px 0px; /* Margin kiri-kanan yang sama dengan paragraf */;
+    text-indent: 2em;
+    line-height: 2;
+    margin: 0px 55px;
+    margin-right: 0.3in;
+    padding-bottom: 0.5em; /* Adjust the value as needed */
+    margin-bottom: 0.5em; /* Adjust the value as needed */  }
   }
   code {
     tab-size: 4;
@@ -711,10 +710,10 @@ text-justify: inter-word;
   }
   p {
     font-family: "Times New Roman", Times, serif;
-    font-size: 13px;
+    font-size: 15px;
     text-align: justify;
     text-justify: inter-word;
-    text-indent: 2em;
+    text-indent: 0em;
     line-height: 1.5;
     padding-bottom: 0.5em;
     margin-bottom: 0.5em;
