@@ -23,7 +23,7 @@
   --green-beans: #00FF55;
   --latte: #E0D080;
   --milk-foam: #ECDFAA;
-  --white-luwak: #F3F3CF;
+  --white-luwak: #F3F3C3;
 /* Lighter */
 }
 
@@ -687,7 +687,7 @@ text-justify: inter-word;
     text-align: justify;
     text-justify: inter-word;
     /* Menyesuaikan margin dan indentasi agar konsisten dengan paragraf */
-    margin: 0px 0px; /* Margin kiri-kanan yang sama dengan paragraf */
+    margin: 15px 0px; /* Margin kiri-kanan yang sama dengan paragraf */
     text-indent: 0em; /* Indentasi baris pertama yang sama dengan paragraf */
     line-height: 1; /* Tinggi baris yang sama dengan paragraf */
     font-size: 12px;
@@ -708,7 +708,7 @@ text-justify: inter-word;
     text-align: justify;
     text-justify: inter-word;
     text-indent: 2em;
-    line-height: 2;
+    line-height: 1.5;
     margin: 0px 55px;
     padding-bottom: 0.5em; /* Sesuaikan nilai jika diperlukan */
     margin-bottom: 0.5em; /* Sesuaikan nilai jika diperlukan */
