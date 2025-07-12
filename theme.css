@@ -95,12 +95,12 @@ body {
   --h6-color: var(--caramel);
   
   /* Buttons | on todo settings, canvas side buttons */
-  --text-on-accent: var(--milk-foam);
+  --text-on-accent: var(--americano);
   --text-on-accent-hover: var(--latte);
   --interactive-normal: var(--golden-brew);	
   --interactive-hover: var(--golden-brew);
   --interactive-accent: var(--crema); /* Vim Cursor */
-  --interactive-accent-hover: var(--americano);
+  --interactive-accent-hover: var(--moccacino);
   --interactive-success: var(--green-beans);
 
   --link-color: var(--hazelnut);
@@ -264,9 +264,9 @@ body {
   --text-on-accent: var(--americano);
   --text-on-accent-hover: var(--americano);
   --interactive-normal: var(--milk-foam);	
-  --interactive-hover: var(--red-robusta-beans);  /* calendar cursor */
+  --interactive-hover: var(--hazelnut);  /* calendar cursor */
   --interactive-accent: var(--caramel); /* Vim Cursor */
-  --interactive-accent-hover: var(--red-robusta-beans);
+  --interactive-accent-hover: var(--hazelnut);
   --interactive-success: var(--red-robusta-beans);
 
   --tag-color: var(--moccacino);
