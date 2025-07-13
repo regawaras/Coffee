@@ -99,7 +99,7 @@ body {
   --text-on-accent-hover: var(--latte);
   --interactive-normal: var(--golden-brew);	
   --interactive-hover: var(--golden-brew);
-  --interactive-accent: var(--crema); /* Vim Cursor */
+  --interactive-accent: var(--caramel); /* Calendar Plugins text & date, Vim Cursor */
   --interactive-accent-hover: var(--moccacino);
   --interactive-success: var(--green-beans);
 
@@ -563,7 +563,7 @@ ol>li::marker, ul>li::marker, .cm-s-obsidian .cm-formatting-list {
 .graph-view.color-fill-focused {
     color: #DDAA00; }
 .graph-view.color-fill-unresolved {
-    color: #--var(--crema); }
+    color: --var(--crema); }
 .graph-view.color-fill-attachment {
     color: #FFCC80; }
 
