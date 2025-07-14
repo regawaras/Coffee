@@ -6,8 +6,8 @@ The "Coffee" theme for Obsidian offers a rich visual experience, bringing the du
 ## Screenshots
 Here are some screenshots of the theme.
 
-<img src="ss-showcase-1.png" alt="Mix Showcase Theme 1" width="700"/>
-<img src="ss-showcase-2.png" alt="Mix Showcase Theme 2" width="700"/>
+<img src="ss-showcase-1.png" alt="Mix Showcase Theme 1" />
+<img src="ss-showcase-2.png" alt="Mix Showcase Theme 2" />
 
 ## Dark Themed Coffee 
 <img alt="coffee-dark-theme" src="https://github.com/user-attachments/assets/2de76b8d-eedb-45e0-b2e6-ae4e40c10656" />
