@@ -10,10 +10,10 @@ Here are some screenshots of the theme.
 <img src="ss-showcase-2.png" alt="Mix Showcase Theme 2" width="700"/>
 
 ## Dark Themed Coffee 
-<img width="1366" height="768" alt="coffee-dark-theme" src="https://github.com/user-attachments/assets/2de76b8d-eedb-45e0-b2e6-ae4e40c10656" />
+<img alt="coffee-dark-theme" src="https://github.com/user-attachments/assets/2de76b8d-eedb-45e0-b2e6-ae4e40c10656" />
 
 ## Light Themed Coffee
-<img width="1366" height="768" alt="coffee-light-theme" src="https://github.com/user-attachments/assets/abd6e207-45ef-48a5-914b-35b8185e5384" />
+<img alt="coffee-light-theme" src="https://github.com/user-attachments/assets/abd6e207-45ef-48a5-914b-35b8185e5384" />
 
 ## Key Features
 1. coffee-inspired color palette, optimized for both dark & light modes. The light mode specifically crafted for visual comfort with warm undertones. Utilizes CSS variables named after coffee terms (e.g., --americano, --moccacino, --latte, --caramel, --hazelnut) for consistency and ease of customization.
